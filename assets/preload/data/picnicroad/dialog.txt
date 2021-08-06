@@ -1,0 +1,13 @@
+:cutsceneone:
+:narrator:Boyfriend and a disfigured Girlfriend arrive at Toad Town, where the Origami Festival is taking place.
+:narrator:However, for a festival it is unusually quiet...
+:cutscenetwo:
+:narrator:In pursuit of finding a way to turn his girlfriend back, the two head down Picnic Road.
+:cutscenethree:
+:toad:Oh hey there! You must be new! Luckily for you, you just ran into the greatest musician in town!
+:bf:Beep?
+:toad:Don't believe me? Alright, let's have a little friendly competition. Right here, right now!
+:bf:...
+:toad:C'mon... just one quick song?
+:bf:Bop...
+:toad:Yay~!

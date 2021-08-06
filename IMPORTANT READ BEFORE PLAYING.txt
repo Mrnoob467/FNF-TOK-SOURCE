@@ -1,0 +1,3 @@
+please install the "mario" font located in assets/fonts in your windows font folder to properly enjoy the mod. thank you!
+
+-LK

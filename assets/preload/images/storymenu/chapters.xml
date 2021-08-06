@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="chapters.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="chapter0000" x="0" y="0" width="753" height="194" frameX="0" frameY="0" frameWidth="800" frameHeight="222"/>
+	<SubTexture name="chapter0001" x="753" y="0" width="790" height="194" frameX="0" frameY="0" frameWidth="800" frameHeight="222"/>
+	<SubTexture name="chapter0002" x="0" y="194" width="789" height="209" frameX="0" frameY="0" frameWidth="800" frameHeight="222"/>
+	<SubTexture name="chapter0003" x="789" y="194" width="800" height="219" frameX="0" frameY="0" frameWidth="800" frameHeight="222"/>
+	<SubTexture name="chapter0004" x="0" y="413" width="761" height="200" frameX="0" frameY="0" frameWidth="800" frameHeight="222"/>
+	<SubTexture name="chapter0005" x="761" y="413" width="684" height="222" frameX="0" frameY="0" frameWidth="800" frameHeight="222"/>
+</TextureAtlas>

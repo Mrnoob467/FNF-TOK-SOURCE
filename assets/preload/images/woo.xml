@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="woo.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="alphabet0000" x="0" y="0" width="1024" height="531"/>
+	<SubTexture name="n0000" x="0" y="531" width="49" height="89"/>
+	<SubTexture name="n0001" x="49" y="531" width="49" height="89"/>
+</TextureAtlas>

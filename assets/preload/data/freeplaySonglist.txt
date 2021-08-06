@@ -1,0 +1,7 @@
+PicnicRoad:toad:1
+RedStreamerBattle:picnic:1
+MissileMaestro:colors:1
+ElasticEntertainer:rubber:1
+YellowStreamerBattle:olivia:3
+ThrillsAtNight:boogie:3
+DiscoDevil:devil:3

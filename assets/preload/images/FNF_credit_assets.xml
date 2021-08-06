@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="FNF_credit_assets.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="lemonking color0000" x="0" y="0" width="2024" height="599"/>
+	<SubTexture name="lemonking grey0000" x="2024" y="0" width="2024" height="599"/>
+	<SubTexture name="mol color0000" x="0" y="599" width="2024" height="599"/>
+	<SubTexture name="mol grey0000" x="2024" y="599" width="2024" height="599"/>
+	<SubTexture name="ninkey color0000" x="0" y="1198" width="2024" height="599"/>
+	<SubTexture name="ninkey grey0000" x="2024" y="1198" width="2024" height="599"/>
+	<SubTexture name="ninkey grey0001" x="2024" y="1198" width="2024" height="599"/>
+	<SubTexture name="ninkey grey0002" x="2024" y="1198" width="2024" height="599"/>
+	<SubTexture name="snak color0000" x="0" y="1797" width="2024" height="599"/>
+	<SubTexture name="snak grey0000" x="2024" y="1797" width="2024" height="599"/>
+</TextureAtlas>

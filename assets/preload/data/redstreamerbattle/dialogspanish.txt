@@ -1,0 +1,14 @@
+:cutscenefour:
+:toad:¡No está mal, eres bastante bueno!
+:toad:Oye, no he podido evitar fijarme en que tu amiga ha sido doblada… Conozco a alguien que podría ayudarla…
+:bf:¿Bo?
+:toad:¡Nuestro héroe local, Mario! ¡Es tu apuesta más segura si necesitas ayuda con temas de origami!
+:bf:Bap boop.
+:toad:Después de desdoblarme se fue en dirección a la Torre Bellavista, así que probablemente tomó el teleférico.
+:cutscenefive:
+:bf:Beep ba!
+:toad:¡Adiooos! ¡Espero que encontréis a Mario sin problemas!
+:cutscenesix:
+:bf:Bap!
+:picnic:¡Alto ahí!
+:picnic:¡Parece que nos dejamos uno! Esta vez nos aseguraremos de doblarte bien, ahora que tu “héroe” no está cerca…
