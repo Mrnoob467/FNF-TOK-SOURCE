@@ -1,14 +1,15 @@
-:cutscenefour:
-:toad:¡No está mal, eres bastante bueno!
-:toad:Oye, no he podido evitar fijarme en que tu amiga ha sido doblada… Conozco a alguien que podría ayudarla…
-:bf:¿Bo?
-:toad:¡Nuestro héroe local, Mario! ¡Es tu apuesta más segura si necesitas ayuda con temas de origami!
-:bf:Bap boop.
-:toad:Después de desdoblarme se fue en dirección a la Torre Bellavista, así que probablemente tomó el teleférico.
-:cutscenefive:
-:bf:Beep ba!
-:toad:¡Adiooos! ¡Espero que encontréis a Mario sin problemas!
+:bg:redstreamer1:
+:toad:default:¡No está mal, eres bastante bueno!
+:toad:default:Oye, no he podido evitar fijarme en que tu amiga ha sido doblada… Conozco a alguien que podría ayudarla…
+:bf:default:¿Bo?
+:toad:default:¡Nuestro héroe local, Mario! ¡Es tu apuesta más segura si necesitas ayuda con temas de origami!
+:bf:default:Bap boop.
+:toad:default:Después de desdoblarme se fue en dirección a la Torre Bellavista, así que probablemente tomó el teleférico.
+:bg:redstreamer2:
+:bf:default:Beep ba!
+:toad:default:¡Adiooos! ¡Espero que encontréis a Mario sin problemas!
+:bg:hide:
 :cutscenesix:
-:bf:Bap!
-:picnic:¡Alto ahí!
-:picnic:¡Parece que nos dejamos uno! Esta vez nos aseguraremos de doblarte bien, ahora que tu “héroe” no está cerca…
+:bf:default:Bap!
+:picnic:default:¡Alto ahí!
+:picnic:default:¡Parece que nos dejamos uno! Esta vez nos aseguraremos de doblarte bien, ahora que tu “héroe” no está cerca…

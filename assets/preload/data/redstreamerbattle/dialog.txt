@@ -1,15 +1,16 @@
-:cutscenefour:
-:toad:Not bad! You're pretty good at this!
-:toad:But uhh... I can't help but notice that your friend there was folded.
-:toad:I might know someone who could help fix her...
-:bf:bo?
-:toad:Yeah! Our local hero, Mario! He's your best bet if you want any help with your girlfriend!
-:bf:Bap boop.
-:toad:After he unfolded me, he went up to Overlook Mountain. It's further along this path, so he probably took the cableway!
-:cutscenefive:
-:bf:Beep ba!
-:toad:Bye frieeends~! Hope you find Mario without anymore trouble!
+:bg:redstreamer1:
+:toad:default:Not bad! You're pretty good at this!
+:toad:default:But uhh... I can't help but notice that your friend there was folded.
+:toad:default:I might know someone who could help fix her...
+:bf:default:bo?
+:toad:default:Yeah! Our local hero, Mario! He's your best bet if you want any help with your girlfriend!
+:bf:default:Bap boop.
+:toad:default:After he unfolded me, he went up to Overlook Mountain. It's further along this path, so he probably took the cableway!
+:bg:redstreamer2:
+:bf:default:Beep ba!
+:toad:default:Bye frieeends~! Hope you find Mario without anymore trouble!
+:bg:hide:
 :cutscenesix:
-:picnic:Stop right there!
-:bf:Bap!
-:picnic:It appears we missed one! We will make sure you are creased! Your "hero" won't be able to save you now!
+:picnic:default:Stop right there!
+:bf:default:Bap!
+:picnic:default:It appears we missed one! We will make sure you are creased! Your "hero" won't be able to save you now!

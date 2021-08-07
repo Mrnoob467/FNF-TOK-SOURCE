@@ -11,6 +11,7 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
+import openfl.display.BitmapData;
 
 using StringTools;
 
@@ -19,6 +20,7 @@ class DialogueBox extends FlxSpriteGroup
 	var box:FlxSprite;
 
 	var curCharacter:String = '';
+	var curAnim:String = '';
 
 	var dialogue:Alphabet;
 	var dialogueList:Array<String> = [];
@@ -37,15 +39,6 @@ class DialogueBox extends FlxSpriteGroup
 	var holdtime:Int = 0;
 
 	var icons:FlxSprite;
-
-	var cutscene1:FlxSprite;
-	var cutscene2:FlxSprite;
-	var cutscene3:FlxSprite;
-	var cutscene4:FlxSprite;
-	var cutscene5:FlxSprite;
-	var cutscene7:FlxSprite;
-	var cutscene8:FlxSprite;
-	var cutscene9:FlxSprite;
 
 	var bf6:FlxSprite;
 	var pausanpiker:FlxSprite;
@@ -69,8 +62,6 @@ class DialogueBox extends FlxSpriteGroup
 	var jojo102:FlxSprite;
 	var jojo10:FlxSprite;
 
-	var bgFade:FlxSprite;
-
 	public function new(talkingRight:Bool = true, ?dialogueList:Array<String>)
 	{
 		super();
@@ -88,21 +79,9 @@ class DialogueBox extends FlxSpriteGroup
 				FlxG.sound.music.fadeIn(1, 0, 0.8);
 		}
 
-		bgFade = new FlxSprite(-200, -200).makeGraphic(Std.int(FlxG.width * 1.3), Std.int(FlxG.height * 1.3), 0xFFB3DFd8);
-		bgFade.scrollFactor.set();
-		bgFade.alpha = 0;
-		add(bgFade);
-
 		cutsceneImage = new FlxSprite(0, 0);
 		cutsceneImage.visible = false;
 		add(cutsceneImage);
-
-		new FlxTimer().start(0.83, function(tmr:FlxTimer)
-		{
-			bgFade.alpha += (1 / 5) * 0.7;
-			if (bgFade.alpha > 0.7)
-				bgFade.alpha = 0.7;
-		}, 5);
 
 		box = new FlxSprite(-20, 45);
 		
@@ -142,34 +121,8 @@ class DialogueBox extends FlxSpriteGroup
 		switch (PlayState.SONG.song.toLowerCase())
 		{
 
-		case 'picnicroad':
-
-		cutscene3 = new FlxSprite(-320, -180).loadGraphic(Paths.image('cutscenes/3'));
-		cutscene3.setGraphicSize(Std.int(cutscene3.width * 0.67));
-		add(cutscene3);	
-		cutscene3.visible = false;
-
-		cutscene2 = new FlxSprite(-320, -180).loadGraphic(Paths.image('cutscenes/2'));
-		cutscene2.setGraphicSize(Std.int(cutscene2.width * 0.67));
-		add(cutscene2);	
-		cutscene2.visible = false;
-
-		cutscene1 = new FlxSprite(-320, -180).loadGraphic(Paths.image('cutscenes/1'));
-		cutscene1.setGraphicSize(Std.int(cutscene1.width * 0.67));
-		add(cutscene1);	
-		cutscene1.visible = false;
 
 		case 'redstreamerbattle':
-
-		cutscene5 = new FlxSprite(-320, -180).loadGraphic(Paths.image('cutscenes/5'));
-		cutscene5.setGraphicSize(Std.int(cutscene5.width * 0.67));
-		add(cutscene5);	
-		cutscene5.visible = false;
-
-		cutscene4 = new FlxSprite(-320, -180).loadGraphic(Paths.image('cutscenes/4'));
-		cutscene4.setGraphicSize(Std.int(cutscene4.width * 0.67));
-		add(cutscene4);	
-		cutscene4.visible = false;
 
 		pausanpiker = new FlxSprite(-150, 0).makeGraphic(FlxG.width * 4, FlxG.height * 4, FlxColor.BLACK);
 		add(pausanpiker);
@@ -221,21 +174,6 @@ class DialogueBox extends FlxSpriteGroup
 		jojo26.visible = false;
 
 		case 'missilemaestro':
-
-		cutscene9 = new FlxSprite(-320, -180).loadGraphic(Paths.image('cutscenes/9'));
-		cutscene9.setGraphicSize(Std.int(cutscene9.width * 0.67));
-		add(cutscene9);	
-		cutscene9.visible = false;
-
-		cutscene8 = new FlxSprite(-320, -180).loadGraphic(Paths.image('cutscenes/8'));
-		cutscene8.setGraphicSize(Std.int(cutscene8.width * 0.67));
-		add(cutscene8);	
-		cutscene8.visible = false;
-
-		cutscene7 = new FlxSprite(-320, -180).loadGraphic(Paths.image('cutscenes/7'));
-		cutscene7.setGraphicSize(Std.int(cutscene7.width * 0.67));
-		add(cutscene7);	
-		cutscene7.visible = false;
 
 		bg10 = new FlxSprite(-320, -180).loadGraphic(Paths.image('cutscenes/cutscene10parts/bg10'));
 		bg10.setGraphicSize(Std.int(bg10.width * 0.67));
@@ -392,21 +330,41 @@ class DialogueBox extends FlxSpriteGroup
 
 					switch (PlayState.SONG.song.toLowerCase())
 				{
-					case 'picnicroad':
-					cutscene3.alpha -= 1 / 5;
+					case 'redstreamerbattle':
+					FlxTween.tween(bg6, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(pausanpiker, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(flash6, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(black6, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(bf6, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(enemies6, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(ohduck6, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(gf6, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(jojo16, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(jojo26, {alpha: 0}, 2, {ease: FlxEase.circOut});
 
+					case 'missilemaestro':
+					FlxTween.tween(bg10, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(light10, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(pencils10, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(gf10, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(ohduck10, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(bf10, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(lines10, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(jojo102, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(jojo10, {alpha: 0}, 2, {ease: FlxEase.circOut});
 				}
+
 
 					new FlxTimer().start(0.2, function(tmr:FlxTimer)
 					{
-						box.alpha -= 1 / 5;
-						bgFade.alpha -= 1 / 5 * 0.7;
-						swagDialogue.alpha -= 1 / 5;
-						icons.alpha -= 1 / 5;
-						dropText.alpha = swagDialogue.alpha;
+						FlxTween.tween(box, {alpha: 0}, 2, {ease: FlxEase.circOut});
+						FlxTween.tween(cutsceneImage, {alpha: 0}, 2, {ease: FlxEase.circOut});
+						FlxTween.tween(swagDialogue, {alpha: 0}, 2, {ease: FlxEase.circOut});
+						FlxTween.tween(icons, {alpha: 0}, 2, {ease: FlxEase.circOut});
+						FlxTween.tween(dropText, {alpha: 0}, 2, {ease: FlxEase.circOut});
 					}, 5);
 
-					new FlxTimer().start(1.2, function(tmr:FlxTimer)
+					new FlxTimer().start(2, function(tmr:FlxTimer)
 					{
 						finishThing();
 						kill();
@@ -474,6 +432,7 @@ class DialogueBox extends FlxSpriteGroup
 
 	var isEnding:Bool = false;
 	var animatedCutscene:Bool = false;
+	var fadingimage:Bool = false;
 
 	function startDialogue():Void
 	{
@@ -490,45 +449,17 @@ class DialogueBox extends FlxSpriteGroup
 
 		switch (curCharacter)
 		{
-			case "1-1":
+			case "bg":
 				skipDialogue = true;
+				switch(curAnim){
+					case "hide":
+						cutsceneImage.visible = false;
+					default:
+						cutsceneImage.visible = true;
+						cutsceneImage.loadGraphic(BitmapData.fromFile("assets/dialogue/images/bg/" + curAnim + ".png"));
+				}
 				
-			case "cutsceneone":
-				skipDialogue = true;
-				if (!cutscene1.visible)
-				{
-					cutscene1.visible = true;	
-				}
-			
-			case "cutscenetwo":
-				skipDialogue = true;
-				FlxTween.tween(cutscene1, { alpha: 0 }, 1); 
-				if (!cutscene2.visible)
-				{
-					cutscene2.visible = true;
-				}
-			case "cutscenethree":
-				skipDialogue = true;
-				FlxTween.tween(cutscene2, { alpha: 0 }, 1); 
-				if (!cutscene3.visible)
-				{
-					cutscene3.visible = true;
-				}
-			case "cutscenefour":
-				skipDialogue = true;
-				if (!cutscene4.visible)
-				{
-					cutscene4.visible = true;
-				}
-			case "cutscenefive":
-				skipDialogue = true;
-				FlxTween.tween(cutscene4, { alpha: 0 }, 1); 
-				if (!cutscene5.visible)
-				{
-					cutscene5.visible = true;
-				}
 			case "cutscenesix":
-				cutscene5.visible = false;
 				holdtime = 2;
 				animatedCutscene = true;
 				skipDialogue = true;
@@ -582,31 +513,10 @@ class DialogueBox extends FlxSpriteGroup
 			}); 
 			}
 
-			case "cutsceneseven":
-				skipDialogue = true;
-				if (!cutscene7.visible)
-				{
-					cutscene7.visible = true;
-				}
-			case "cutsceneeight":
-				skipDialogue = true;
-				FlxTween.tween(cutscene7, { alpha: 0 }, 1); 
-				if (!cutscene8.visible)
-				{
-					cutscene8.visible = true;
-				}
-			case "cutscenenine":
-				skipDialogue = true;
-				FlxTween.tween(cutscene8, { alpha: 0 }, 1); 
-				if (!cutscene9.visible)
-				{
-					cutscene9.visible = true;
-				}
 			case "cutsceneten":
 				holdtime = 1;
 				animatedCutscene = true;
 				skipDialogue = true;
-				cutscene9.visible = false;
 				if (!bg10.visible)
 				{
 					bg10.visible = true;
@@ -791,8 +701,16 @@ class DialogueBox extends FlxSpriteGroup
 
 	function cleanDialog():Void
 	{
+		while(dialogueList[0] == ""){
+			dialogueList.remove(dialogueList[0]);
+		}
+
 		var splitName:Array<String> = dialogueList[0].split(":");
 		curCharacter = splitName[1];
-		dialogueList[0] = dialogueList[0].substr(splitName[1].length + 2).trim();
+		curAnim = splitName[2];
+	
+		dialogueList[0] = dialogueList[0].substr(splitName[1].length + splitName[2].length  + 3).trim();
+		
+		
 	}
 }

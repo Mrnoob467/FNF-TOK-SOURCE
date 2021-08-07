@@ -1,16 +1,17 @@
-:cutsceneseven:
-:narrator:After an easy encounter with the goons, they disappeared and turned into coins.
-:narrator:And so, both of them continued their journey to Overlook Mountain.
-:cutsceneeight:
-:narrator:At the foot of the mountain, they spot the cableway the toad was talking about.
-:narrator:It appeared to have just returned, meaning that "Mario" couldn't be too far away.
-:cutscenenine:
-:narrator:After finally getting to the top of the mountain, they spot the station; along with a cabin waiting for their arrival.
+:bg:missile1:
+:narrator:default:After an easy encounter with the goons, they disappeared and turned into coins.
+:narrator:default:And so, both of them continued their journey to Overlook Mountain.
+:bg:missile2:
+:narrator:default:At the foot of the mountain, they spot the cableway the toad was talking about.
+:narrator:default:It appeared to have just returned, meaning that "Mario" couldn't be too far away.
+:bg:missile3:
+:narrator:default:After finally getting to the top of the mountain, they spot the station; along with a cabin waiting for their arrival.
+:bg:hide:
 :cutsceneten:
-:colors:HALT!
-:bf:BEEEEEP!!
-:colors:What a pity! This cableway is out of order...
-:colors:You're not going anywhere before I get my revenge!
-:colors:That red hairy dwarf... he thought I was gone for good!
-:colors:Well I've got some time to deal with you two before I leave this world!
-:colors:PREPARE YOURSELF!
+:colors:default:HALT!
+:bf:default:BEEEEEP!!
+:colors:default:What a pity! This cableway is out of order...
+:colors:default:You're not going anywhere before I get my revenge!
+:colors:default:That red hairy dwarf... he thought I was gone for good!
+:colors:default:Well I've got some time to deal with you two before I leave this world!
+:colors:default:PREPARE YOURSELF!

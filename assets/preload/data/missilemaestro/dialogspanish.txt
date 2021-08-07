@@ -1,15 +1,16 @@
-:cutsceneseven:
-:narrator:Tras un corto enfrentamiento con esos matones, desaparecieron y se convirtieron en monedas.
-:narrator:Bf y Gf continuaron pues su viaje hacia la Torre Bellavista.
-:cutsceneeight:
-:narrator:Al pie de la montaña se puede ver la estación del teleférico de la que el Toad estaba hablando.
-:narrator:Parece que una cabina acaba de volver, Mario no puede estar muy lejos.
-:cutscenenine:
-:narrator:Con el camino previamente despejado, lograron subir la montaña hasta llegar a la estación. Una cabina les está esperando...
+:bg:missile1:
+:narrator:default:Tras un corto enfrentamiento con esos matones, desaparecieron y se convirtieron en monedas.
+:narrator:default:Bf y Gf continuaron pues su viaje hacia la Torre Bellavista.
+:bg:missile2:
+:narrator:default:Al pie de la montaña se puede ver la estación del teleférico de la que el Toad estaba hablando.
+:narrator:default:Parece que una cabina acaba de volver, Mario no puede estar muy lejos.
+:bg:missile3:
+:narrator:default:Con el camino previamente despejado, lograron subir la montaña hasta llegar a la estación. Una cabina les está esperando...
+:bg:hide:
 :cutsceneten:
-:bf:BEEEEEP!!
-:colors:¡Qué pena! ¡El teleférico está fuera de servicio!
-:colors:¡No iréis a ninguna parte sin que me cobre mi venganza!
-:colors:¡El enano bigotudo pensó que se había librado de mí!
-:colors:Pero esta ira que tengo acumulada me permite quedarme en este mundo por un tiempo...
-:colors:¡PREPÁRATE! ¡PIENSO DESCARGARLA TODA SOBRE TI!
+:bf:default:BEEEEEP!!
+:colors:default:¡Qué pena! ¡El teleférico está fuera de servicio!
+:colors:default:¡No iréis a ninguna parte sin que me cobre mi venganza!
+:colors:default:¡El enano bigotudo pensó que se había librado de mí!
+:colors:default:Pero esta ira que tengo acumulada me permite quedarme en este mundo por un tiempo...
+:colors:default:¡PREPÁRATE! ¡PIENSO DESCARGARLA TODA SOBRE TI!
