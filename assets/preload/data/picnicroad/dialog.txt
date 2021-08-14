@@ -1,9 +1,15 @@
 :bg:picnic1:
+:music:1-1:
+:music:fadeIn:
 :narrator:default:Boyfriend and a disfigured Girlfriend arrive at Toad Town, where the Origami Festival is taking place.
 :narrator:default:However, for a festival it is unusually quiet...
+:fade:picnic1:
 :bg:picnic2:
 :narrator:default:In pursuit of finding a way to turn his girlfriend back, the two head down Picnic Road.
+:fade:picnic2:
 :bg:picnic3:
+:music:1-2:
+:music:fadeIn:
 :toad:default:Oh hey there! You must be new! Luckily for you, you just ran into the greatest musician in town!
 :bf:default:Beep?
 :toad:default:Don't believe me? Alright, let's have a little friendly competition. Right here, right now!

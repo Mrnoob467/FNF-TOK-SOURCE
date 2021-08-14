@@ -1,0 +1,11 @@
+:bg:missile4:
+:music:1-1:
+:music:fadeIn:
+:colors:default:¿¡CÓMO ES POSIBLE!?
+:colors:default:¡YO, UN ARTISTA DE MI CALIBRE, DERROTADO POR DOS ENANOS CONSECUTIVAMENTE!
+:colors:default:¡PAGARÉIS POR ESTO…..!
+:bg:hide:
+:fade:missile4:
+:narrator:default:El espíritu colorido se desvaneció con un brillo cegador…
+:bg:missile5:
+:narrator:default:Todavía en shock, Bf no pierde más tiempo y se sube al teleférico con Gf para proceder con su viaje al Monte del Otoño.
