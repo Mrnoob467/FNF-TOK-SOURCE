@@ -1,0 +1,23 @@
+:bg:missile1:
+:music:1-2:
+:music:fadeIn:
+:narrator:default:Após um encontro fácil com os capangas, eles desapareceram e se tornaram em moedas.
+:narrator:default:E então, os dois continuaram a sua jornada para Montanha da Vista Alta.
+:fade:missile1:
+:bg:missile2:
+:narrator:default:Ao pé da montanha, eles avistam o teleférico que Toad estava falando sobre.
+:narrator:default:Aparentava ter acabado de voltar, o que significa que “Mario” não poderia estar muito longe.
+:fade:missile2:
+:bg:missile3:
+:narrator:default:Após finalmente chegarem ao topo da montanha, eles avistam a estação; junto com uma cabana esperando por sua chegada.
+:bg:hide:
+:cutsceneten:
+:music:1-4:
+:music:fadeIn:
+:colors:default:PARE!
+:bf:default:BEEEEEP!!
+:colors:default:Mas que peninha! O teleférico está fora de serviço...
+:colors:default:Você não vai a lugar algum antes de eu ter a minha vingança!
+:colors:default:Aquele anãozinho vermelho... Ele achou que eu seria derrotado tão fácilmente assim...
+:colors:default:Bem, eu tenho um tempinho para lidar com vocês dois antes de eu deixar esse mundo!
+:colors:default:SE PREPARE!

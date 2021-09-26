@@ -1,0 +1,21 @@
+:bg:redstreamer1:
+:music:1-2:
+:music:fadeIn:
+:toad:default:Nada mal! Você é muito bom nisso!
+:toad:default:Mas uhh… Eu não consigo ignorar o fato de que sua amiga aí foi dobrada.
+:toad:default:Eu talvez conheça alguém que possa ajudar a arrumar ela...
+:bf:default:bo?
+:toad:default:Sim! O nosso herói local, Mario! Ele é sua melhor aposta se você quiser qualquer ajuda com sua namorada!
+:bf:default:Bap boop.
+:toad:default:Depois que ele me desdobrou, ele foi à Montanha da Vista Alta. É mais adiante neste caminho, então ele deve ter pego o teleférico!
+:fade:redstreamer1:
+:bg:redstreamer2:
+:bf:default:Beep ba!
+:toad:default:¡Adiooos! ¡Espero que encontréis a Mario sin problemas!
+:bg:hide:
+:cutscenesix:
+:music:1-3:
+:music:fadeIn:
+:bf:default:Bap!
+:picnic:default:Pare aí mesmo!
+:picnic:default:Parece que nós tínhamos perdido um! Vamos ter certeza de que você seja amassado! Seu “herói” não vai poder te salvar agora!

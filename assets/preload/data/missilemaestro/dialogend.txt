@@ -3,10 +3,11 @@
 :music:fadeIn:
 :colors:default:I CAN'T BELIEVE THIS!
 :colors:default:ME, JEAN PIERRE COLORED PENCILS THE 12TH, DEFEATED BY TWO MIDGETS IN A ROW!
-:colors:default:YOU'LL PAY FOR-...
+:colors:default:YOU’LL PAY FOR-....
 :bg:hide:
 :fade:missile4:
-:narrator:default:The colored spectre vanished with a bright glow...
+:narrator:default:The colorful spectre vanished out of existence with a bright glow..
 :bg:missile5:
 :narrator:default:Still in shock, Boyfriend gets on the cableway with Girlfriend, as they proceed to ride to Autumn Mountain.
 :narrator:default:For their sake, let's hope Mario isn't too far ahead.
+:sound:tbc:

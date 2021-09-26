@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="aaa.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="water_00000.png" x="0" y="0" width="2146" height="629"/>
+	<SubTexture name="water_00001.png" x="2146" y="0" width="2146" height="629"/>
+	<SubTexture name="water_00002.png" x="4292" y="0" width="2146" height="629"/>
+	<SubTexture name="water_00003.png" x="0" y="629" width="2146" height="629"/>
+	<SubTexture name="water_00004.png" x="2146" y="629" width="2146" height="629"/>
+	<SubTexture name="water_00005.png" x="4292" y="629" width="2146" height="629"/>
+	<SubTexture name="water_00006.png" x="0" y="1258" width="2146" height="629"/>
+	<SubTexture name="water_00007.png" x="2146" y="1258" width="2146" height="629"/>
+	<SubTexture name="water_00008.png" x="4292" y="1258" width="2146" height="629"/>
+	<SubTexture name="water_00009.png" x="0" y="1887" width="2146" height="629"/>
+	<SubTexture name="water_00010.png" x="2146" y="1887" width="2146" height="629"/>
+	<SubTexture name="water_00011.png" x="4292" y="1887" width="2146" height="629"/>
+	<SubTexture name="water_00012.png" x="0" y="2516" width="2146" height="629"/>
+	<SubTexture name="water_00013.png" x="2146" y="2516" width="2146" height="629"/>
+	<SubTexture name="water_00014.png" x="4292" y="2516" width="2146" height="629"/>
+	<SubTexture name="water_00015.png" x="0" y="3145" width="2146" height="629"/>
+	<SubTexture name="water_00016.png" x="2146" y="3145" width="2146" height="629"/>
+	<SubTexture name="water_00017.png" x="4292" y="3145" width="2146" height="629"/>
+	<SubTexture name="water_00018.png" x="0" y="3774" width="2146" height="629"/>
+	<SubTexture name="water_00019.png" x="2146" y="3774" width="2146" height="629"/>
+	<SubTexture name="water_00020.png" x="4292" y="3774" width="2146" height="629"/>
+	<SubTexture name="water_00021.png" x="0" y="4403" width="2146" height="629"/>
+	<SubTexture name="water_00022.png" x="2146" y="4403" width="2146" height="629"/>
+	<SubTexture name="water_00023.png" x="4292" y="4403" width="2146" height="629"/>
+	<SubTexture name="water_00024.png" x="0" y="5032" width="2146" height="629"/>
+	<SubTexture name="water_00025.png" x="2146" y="5032" width="2146" height="629"/>
+	<SubTexture name="water_00026.png" x="4292" y="5032" width="2146" height="629"/>
+	<SubTexture name="water_00027.png" x="0" y="5661" width="2146" height="629"/>
+	<SubTexture name="water_00028.png" x="2146" y="5661" width="2146" height="629"/>
+	<SubTexture name="water_00029.png" x="4292" y="5661" width="2146" height="629"/>
+	<SubTexture name="water_00030.png" x="0" y="6290" width="2146" height="629"/>
+	<SubTexture name="water_00031.png" x="2146" y="6290" width="2146" height="629"/>
+	<SubTexture name="water_00032.png" x="4292" y="6290" width="2146" height="629"/>
+	<SubTexture name="water_00033.png" x="0" y="6919" width="2146" height="629"/>
+	<SubTexture name="water_00034.png" x="2146" y="6919" width="2146" height="629"/>
+	<SubTexture name="water_00035.png" x="4292" y="6919" width="2146" height="629"/>
+	<SubTexture name="water_00036.png" x="0" y="7548" width="2146" height="629"/>
+	<SubTexture name="water_00037.png" x="2146" y="7548" width="2146" height="629"/>
+	<SubTexture name="water_00038.png" x="4292" y="7548" width="2146" height="629"/>
+</TextureAtlas>

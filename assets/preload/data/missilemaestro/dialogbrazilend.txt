@@ -1,0 +1,13 @@
+:bg:missile4:
+:music:1-1:
+:music:fadeIn:
+:colors:default:EU NÃO ACREDITO NISSO!
+:colors:default:EU, JEAN PIERRE LÁPIS COLORIDOS O 12º, DERROTADO AGORA POR DOIS ANÕES!
+:colors:default:VOCÊ VAI PAGAR POR-...
+:bg:hide:
+:fade:missile4:
+:narrator:default:O espectro colorido desapareceu da existência com um brilho intenso...
+:bg:missile5:
+:narrator:default:Ainda em choque, Boyfriend sobe no teleférico com a Girlfriend, e prosseguem sua jornada a Montanha do Outono.
+:narrator:default:Pelo bem deles, vamos torcer que Mario não esteja muito longe...
+:sound:tbc:

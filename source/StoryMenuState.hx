@@ -25,34 +25,27 @@ class StoryMenuState extends MusicBeatState
 	var toads:FlxSprite;
 	var lock:FlxSprite;
 	var streamers:FlxSprite;
-	var lockedstreamers:FlxSprite;
 	var chapterselectbox:FlxSprite;
 	var chaptertext:FlxSprite;
 	var greychaptertext:FlxSprite;
 	var scoreText:FlxText;
 	var chapterload:FlxSprite;
+	var gf:FlxSprite;
 
 	var weekData:Array<Dynamic> = [
-		//add picnic road back
 		['PicnicRoad', 'RedStreamerBattle', 'MissileMaestro'],
-		['Bopeebo', 'Fresh', 'Dad Battle'],
-		['YellowStreamerBattle', 'ThrillsAtNight', 'DiscoDevil'],
-		['Pico', 'Philly Nice', "Blammed"],
-		['Satin Panties', "High", "Milf"],
-		['Cocoa', 'Eggnog', 'Winter Horrorland']
+		['AutumnMountainBattle', 'EddyRiver', 'ElasticEntertainer'],
+		['YellowStreamerBattle', 'ThrillsAtNight', 'DiscoDevil']
 	];
 	var curDifficulty:Int = 1;
 
-	public static var weekUnlocked:Array<Bool> = [true, false, false, false, false, false];
+	public static var weekUnlocked:Array<Bool> = [true, true, true, false, false];
 	
 
 	var weekCharacters:Array<Dynamic> = [
-		['colors', 'bf', 'gf'],
-		['', 'bf', 'gf'],
-		['', 'bf', 'gf'],
-		['', 'bf', 'gf'],
-		['', 'bf', 'gf'],
-		['', 'bf', 'gf']
+		['colors', 'bf', ''],
+		['rubber', 'bf', ''],
+		['punch', 'bf', '']
 	];
 
 
@@ -65,7 +58,7 @@ class StoryMenuState extends MusicBeatState
 	// var grpWeekText:FlxTypedGroup<MenuItem>;
 	var grpWeekCharacters:FlxTypedGroup<MenuCharacter>;
 
-	var grpLocks:FlxTypedGroup<FlxSprite>;
+	//var grpLocks:FlxTypedGroup<FlxSprite>;
 
 	var ChapterSelectors:FlxGroup;
 	var sprDifficulty:FlxSprite;
@@ -95,14 +88,7 @@ class StoryMenuState extends MusicBeatState
 		scoreText.setFormat("New Super Mario Font U", 30, FlxTextAlign.CENTER);
 		scoreText.screenCenter(X);
 
-		var rankText:FlxText = new FlxText(0, 10);
-		rankText.text = 'RANK: GREAT';
-		rankText.setFormat(Paths.font("vcr.ttf"), 32);
-		rankText.size = scoreText.size;
-		rankText.screenCenter(X);
-
 		var ui_tex = Paths.getSparrowAtlas('UI_assets');
-		var yellowBG:FlxSprite = new FlxSprite(0, 56).makeGraphic(FlxG.width, 400, 0xFFF9CF51);
 
 		var stagebg:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('stagebackground'));
 			stagebg.setGraphicSize(Std.int(stagebg.width * 0.55));
@@ -127,15 +113,6 @@ class StoryMenuState extends MusicBeatState
 			campaignstage.active = false;
 			add(campaignstage);
 
-		lockedstreamers = new FlxSprite(0, 0);
-			lockedstreamers.frames = Paths.getSparrowAtlas('streamer');
-			lockedstreamers.animation.addByPrefix('locked', "lockedstreamer", 24);
-			lockedstreamers.antialiasing = true;
-			lockedstreamers.setGraphicSize(Std.int(props.width * 0.9));
-			lockedstreamers.updateHitbox();
-			add(lockedstreamers);
-			lockedstreamers.animation.play('locked');
-
 		streamers = new FlxSprite(0, 0);
 			streamers.frames = Paths.getSparrowAtlas('streamer');
 			streamers.animation.addByPrefix('red', "redstreamer", 24);
@@ -143,6 +120,7 @@ class StoryMenuState extends MusicBeatState
 			streamers.animation.addByPrefix('yellow', "yellowstreamer", 24);
 			streamers.animation.addByPrefix('purple', "purplestreamer", 24);
 			streamers.animation.addByPrefix('green', "greenstreamer", 24);
+			streamers.animation.addByPrefix('locked', "lockedstreamer", 24);
 			streamers.antialiasing = true;
 			streamers.setGraphicSize(Std.int(props.width * 0.9));
 			streamers.updateHitbox();
@@ -161,6 +139,15 @@ class StoryMenuState extends MusicBeatState
 		grpWeekCharacters.add(new MenuCharacter(450, 25, 0.9, true));
 		grpWeekCharacters.add(new MenuCharacter(850, 100, 0.5, true));
 		add(grpWeekCharacters);
+
+		gf = new FlxSprite(750, 170);
+			gf.frames = Paths.getSparrowAtlas('gfmenu');
+			gf.animation.addByPrefix('dance', 'GF Dancing Beat', 24);
+			gf.antialiasing = true;
+			gf.setGraphicSize(Std.int(gf.width * 0.45));
+			gf.updateHitbox();
+			gf.animation.play('dance');
+			add(gf);
 
 		var stagecurtains:FlxSprite = new FlxSprite(0, -300).loadGraphic(Paths.image('stagecurtains'));
 			stagecurtains.setGraphicSize(Std.int(stagecurtains.width * 0.5));
@@ -270,24 +257,10 @@ class StoryMenuState extends MusicBeatState
 		// var blackBarThingie:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, 56, FlxColor.BLACK);
 		// add(blackBarThingie);
 
-		grpLocks = new FlxTypedGroup<FlxSprite>();
-		add(grpLocks);
+		//grpLocks = new FlxTypedGroup<FlxSprite>();
+		//add(grpLocks);
 
 		trace("Line 70");
-
-		for (i in 0...weekData.length)
-		{
-			// var weekThing:MenuItem = new MenuItem(0, yellowBG.y + yellowBG.height + 10, i);
-			//weekThing.y += ((weekThing.height + 20) * i);
-			//weekThing.targetY = i;
-			// grpWeekText.add(weekThing);
-
-			// weekThing.screenCenter(X);
-			// weekThing.antialiasing = true;
-			// weekThing.updateHitbox();
-
-			// Needs an offset thingie
-	}
 
 		trace("Line 96");
 
@@ -372,25 +345,21 @@ class StoryMenuState extends MusicBeatState
 
 		// FlxG.watch.addQuick('font', scoreText.font);
 
-		    streamers.visible = weekUnlocked[curWeek];
+		   // streamers.visible = weekUnlocked[curWeek];
 			chaptertext.visible = weekUnlocked[curWeek];
 			chapterselectbox.visible = weekUnlocked[curWeek];
 
 		if (weekUnlocked[curWeek])
 		{
 			remove(lock);
+			grpWeekCharacters.members[0].color = 0xffffff;
 		}
 		else{
+			streamers.animation.play('locked');
 			add(lock);
+			grpWeekCharacters.members[0].color = 0x000000;
 		}
 
-		//grpLocks.forEach(function(lock:FlxSprite)
-		//{
-		//	remove(streamers);
-		//		streamers.animation.play('locked');
-		//		add(streamers);
-			//lock.y = grpWeekText.members[lock.ID].y;
-		// });
 
 		if (!movedBack)
 		{
@@ -412,7 +381,7 @@ class StoryMenuState extends MusicBeatState
 
 				if (controls.RIGHT_P)
 				{
-					if(curWeek == 5)
+					if(curWeek == 2)
 					{
 						
 					}
@@ -563,8 +532,6 @@ class StoryMenuState extends MusicBeatState
 		if (curWeek < 0)
 			curWeek = weekData.length - 1;
 
-		// i'm not good enough at coding to understand how tf you properly switch week images - LK
-
 			switch (curWeek)
 		{
 			case 0:
@@ -572,47 +539,37 @@ class StoryMenuState extends MusicBeatState
 				chaptertext.offset.x = 180;
 				greychaptertext.animation.play('chapter1');
 				greychaptertext.offset.x = 180;
-				remove(streamers);
 				streamers.animation.play('red');
-				add(streamers);
 			case 1:
 				chaptertext.animation.play('chapter2');
 				chaptertext.offset.x = 190;
 				greychaptertext.animation.play('chapter2');
 				greychaptertext.offset.x = 190;
-				remove(streamers);
 				streamers.animation.play('blue');
-				add(streamers);
 			case 2:
 				chaptertext.animation.play('chapter3');
 				chaptertext.offset.x = 189;
 				greychaptertext.animation.play('chapter3');
 				greychaptertext.offset.x = 189;
-				remove(streamers);
 				streamers.animation.play('yellow');
-				add(streamers);
 			case 3:
 				chaptertext.animation.play('chapter4');
 				chaptertext.offset.x = 193;
 				greychaptertext.animation.play('chapter4');
 				greychaptertext.offset.x = 193;
-				remove(streamers);
 				streamers.animation.play('purple');
-				add(streamers);
 			case 4:
 				chaptertext.animation.play('chapter5');
 				chaptertext.offset.x = 186;
 				greychaptertext.animation.play('chapter5');
 				greychaptertext.offset.x = 186;
-				remove(streamers);
 				streamers.animation.play('green');
-				add(streamers);	
 			case 5:
 				chaptertext.animation.play('chapter6');
 				chaptertext.offset.x = 167;
 				greychaptertext.animation.play('chapter6');
 				greychaptertext.offset.x = 167;
-				remove(streamers);
+				streamers.animation.play('locked');
 		}
 
 

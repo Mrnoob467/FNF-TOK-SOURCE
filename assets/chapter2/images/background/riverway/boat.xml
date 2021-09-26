@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="boat.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="boat0000" x="0" y="0" width="1865" height="510"/>
+	<SubTexture name="boat0001" x="0" y="0" width="1865" height="510"/>
+	<SubTexture name="boat0002" x="0" y="510" width="1865" height="510"/>
+	<SubTexture name="boat0003" x="0" y="510" width="1865" height="510"/>
+	<SubTexture name="boat0004" x="0" y="1020" width="1865" height="510"/>
+	<SubTexture name="boat0005" x="0" y="1020" width="1865" height="510"/>
+	<SubTexture name="boat0006" x="0" y="1530" width="1865" height="510"/>
+	<SubTexture name="boat0007" x="0" y="1530" width="1865" height="510"/>
+</TextureAtlas>

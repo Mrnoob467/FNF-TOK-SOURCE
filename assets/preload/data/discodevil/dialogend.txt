@@ -1,0 +1,16 @@
+:music:3-6:
+:music:fadeIn:
+:sound:explosion:
+:bg:tear:
+:bg:discodevil3:
+:narrator:default:With the fiend defeated everyone's faces flew back to where they belonged.
+:yellowtoad:default:Yaay I can speak again!
+:yellowtoad:default:Yipee!
+:yellowtoad:default:Haha thank you!
+:dj:default:Good job kid, I didn't know you had it in ya.
+:olivia:default:That was awesome! Great work big blue!
+:prof:default:That was phenomenal, kid! Now let's go get that streamer and get out of here!
+:olivia:default: Let's go!
+:bf:default:Beep!
+:gf:default:.........
+:sound:tbc:

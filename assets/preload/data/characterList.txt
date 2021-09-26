@@ -13,3 +13,5 @@ olivia
 rubber
 boogie
 devil
+autumn
+gondol

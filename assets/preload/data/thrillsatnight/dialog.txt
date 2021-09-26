@@ -1,0 +1,84 @@
+:music:3-2:
+:music:fadeIn:
+:bg:thrillsatnight1:
+:narrator:default:Boyfriend explains his situation to Olivia.
+:olivia:default:Oh? You think Mario can fix your girlfriend? Hang on, let me check something...
+:fade:thrillsatnight1:
+:bg:thrillsatnight2:
+:sound:sandrun:
+:olivia:default:Yeah, just as I expected, she's stapled. Meaning she's stuck like this... possibly forever.
+:bf:default:B-B-B-Beeeep!?
+:bg:thrillsatnight3:
+:sound:fallover:
+:bg:tear:
+:narrator:default:The news devestated Boyfriend. He fell to his knees and sobbed.
+:olivia:default:Oh my!, u-uh... Hey, don't cry!
+:music:3-3:
+:music:fadeIn:
+:bg:thrillsatnight4:
+:bg:flash:
+:sound:hug:
+:olivia:default:It's ok, there's still a chance we can fix her!
+:olivia:default:Uhm... you can join us on our quest to take down my brother! He's the one who's responsible for all of this.
+:bf:default:...
+:bf:default:Beep?
+:olivia:default:Of course! I'm sure Mario won't mind you two tagging along, right?
+:prof:default:Well, I don't see why not. Any extra help is appreciated.
+:olivia:default:Great!
+:prof:default:Anyways, we'll have to get to that temple. Let's go! I'm dying to see what's inside.
+:fade:thrillsatnight4:
+:bg:thrillsatnight5:
+:prof:default:Onward!
+:olivia:default:Let's go get that streamer!
+:bf:default:Beep!
+:music:3-4:
+:music:fadeIn:
+:fade:thrillsatnight5:
+:bg:thrillsatnight6:
+:sound:sandrun:
+:prof:default:Oh my, this is fascinating... Just look at how it's constructed, it must be thousands of years old...
+:prof:default:And these murals must be of the ancients, where's my journal? I've gotta write this down.
+:olivia:default:On a more related note, I wonder what my brother has guarding the yellow streamer.
+:prof:default:Oh right... I guess saving the world may be more important.
+:fade:thrillsatnight6:
+:bg:thrillsatnight7:
+:music:3-5:
+:music:fadeIn:
+:narrator:default:The party eventually makes it to what appears to be a massive disco room.
+:prof:default:Did the ancients like to party?
+:narrator:default:Before his question was answered, a loud voice boomed from the big doors behind them.
+:bg:tear:
+:bg:flash:
+:sound:screenshake:
+:narrator:default:???: No no no! You think that's groovy?! I thought the king would give me soldiers who had decent taste in music!
+:olivia:default:I don't know if the ancients liked to party... but whoever that is sure does.
+:olivia:default:Wait, if it's a friend of my brother's, that means the streamer must be in there with them!
+:bg:tear:
+:bg:flash:
+:sound:screenshake:
+:narrator:default:???: I want to groove, but I ain't coming out until that dance floor is full!
+:bg:tear:
+:bg:flash:
+:sound:screenshake:
+:narrator:default:???: Also one of you fools, change that trash music this instant!
+:fade:thrillsatnight7:
+:bg:thrillsatnight8:
+:narrator:default:The party splits up. While Boyfriend helps pick out a new song, Mario goes looking for people to fill the room.
+:bf:default:Beep Boop bada boo.
+:dj:default:I'm sorry dude... I-I don't understand you...
+:narrator:default: Mario and Professor Toad find a bunch of strange toads that begin to react to the distant music.
+:prof:default:Are you sure about this Mario...?
+:bg:thrillsatnight9:
+:sound:fallover:
+:bg:tear:
+:music:3-6:
+:music:fadeIn:
+:narrator:default:Once Mario arrived with the crowd of toads, they swarmed Boyfriend and lifted him into the air.
+:bg:tear:
+:bg:flash:
+:bf:default:Beeep!!!
+:olivia:default:Eek! What are they doing?
+:dj:default:I think that one is challenging him to... sing?
+:olivia:default:Why would they want him to do that?
+:prof:default:No idea, but we need to keep them here long enough to lure out whoever is guarding that streamer.
+:olivia:default:Just... be careful.

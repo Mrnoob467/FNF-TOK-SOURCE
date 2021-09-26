@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="yapeboppers.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="wtf0000" x="1" y="1" width="660" height="712"/>
+	<SubTexture name="wtf0001" x="1" y="1" width="660" height="712"/>
+	<SubTexture name="wtf0002" x="662" y="1" width="660" height="712"/>
+	<SubTexture name="wtf0003" x="662" y="1" width="660" height="712"/>
+	<SubTexture name="wtf0004" x="1323" y="1" width="660" height="712"/>
+	<SubTexture name="wtf0005" x="1323" y="1" width="660" height="712"/>
+	<SubTexture name="wtf0006" x="1323" y="1" width="660" height="712"/>
+	<SubTexture name="wtf0007" x="1323" y="1" width="660" height="712"/>
+</TextureAtlas>

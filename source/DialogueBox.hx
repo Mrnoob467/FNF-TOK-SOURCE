@@ -28,6 +28,7 @@ class DialogueBox extends FlxSpriteGroup
 	var dialogueList:Array<String> = [];
 
 	var skipText:FlxText;
+	var tbctxt:FlxText;
 
 
 	// SECOND DIALOGUE FOR THE PIXEL SHIT INSTEAD???
@@ -69,6 +70,15 @@ class DialogueBox extends FlxSpriteGroup
 	var jojo102:FlxSprite;
 	var jojo10:FlxSprite;
 
+	var bf16happy:FlxSprite;
+	var bf16scared:FlxSprite;
+	var smoke16:FlxSprite;
+	var bg16:FlxSprite;
+	var holepuncher:FlxSprite;
+	var people16:FlxSprite;
+	var microphone16:FlxSprite;
+	var shocked16:FlxSprite;
+
 	public function new(talkingRight:Bool = true, ?dialogueList:Array<String>)
 	{
 		super();
@@ -93,39 +103,14 @@ class DialogueBox extends FlxSpriteGroup
 
 		box = new FlxSprite(-20, 45);
 		
-		var hasDialog = false;
-		switch (PlayState.SONG.song.toLowerCase())
-		{
-			case 'picnicroad':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('cutscenes/dialoguebox-paper', 'shared');
-				box.animation.addByPrefix('normalOpen', 'dialoguebox-paper', 24, false);
-				box.animation.addByIndices('normal', 'dialoguebox-paper', [6], "", 24);
-				box.setGraphicSize(Std.int(box.width * 0.67));
-				box.y += 230;
-
-			case 'redstreamerbattle':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('cutscenes/dialoguebox-paper', 'shared');
-				box.animation.addByPrefix('normalOpen', 'dialoguebox-paper', 24, false);
-				box.animation.addByIndices('normal', 'dialoguebox-paper', [6], "", 24);
-				box.setGraphicSize(Std.int(box.width * 0.67));
-				box.y += 230;
-
-			case 'missilemaestro':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('cutscenes/dialoguebox-paper', 'shared');
-				box.animation.addByPrefix('normalOpen', 'dialoguebox-paper', 24, false);
-				box.animation.addByIndices('normal', 'dialoguebox-paper', [6], "", 24);
-				box.setGraphicSize(Std.int(box.width * 0.67));
-				box.y += 230;
-		}
+		box.frames = Paths.getSparrowAtlas('cutscenes/dialoguebox-paper', 'shared');
+		box.animation.addByPrefix('normalOpen', 'dialoguebox-paper', 24, false);
+		box.animation.addByIndices('normal', 'dialoguebox-paper', [6], "", 24);
+		box.setGraphicSize(Std.int(box.width * 0.67));
+		box.y += 230;
 
 		this.dialogueList = dialogueList;
-		
-		if (!hasDialog)
-			return;
-	
+
 		switch (PlayState.SONG.song.toLowerCase())
 		{
 
@@ -229,6 +214,66 @@ class DialogueBox extends FlxSpriteGroup
 		jojo10.setGraphicSize(Std.int(jojo10.width * 0.67));
 		add(jojo10);	
 		jojo10.visible = false;
+
+		case 'discodevil':
+
+		bg16 = new FlxSprite(-320, -180).loadGraphic(Paths.image('cutscenes/cutscene16parts/16_BG'));
+		bg16.setGraphicSize(Std.int(bg16.width * 0.68));
+		add(bg16);	
+		bg16.visible = false;
+
+		people16 = new FlxSprite(-300, 500).loadGraphic(Paths.image('cutscenes/cutscene16parts/16_people'));
+		people16.setGraphicSize(Std.int(people16.width * 0.67));
+		add(people16);	
+		people16.visible = false;
+
+		holepuncher = new FlxSprite(100, -550).loadGraphic(Paths.image('cutscenes/cutscene16parts/16_holepunch'));
+		holepuncher.setGraphicSize(Std.int(holepuncher.width * 0.27));
+		add(holepuncher);	
+		holepuncher.visible = false;
+
+		smoke16 = new FlxSprite(-320, 200).loadGraphic(Paths.image('cutscenes/cutscene16parts/16_smoke'));
+		smoke16.setGraphicSize(Std.int(smoke16.width * 0.67));
+		smoke16.alpha = 0;
+		add(smoke16);
+
+		bf16happy = new FlxSprite(-70, -10).loadGraphic(Paths.image('cutscenes/cutscene16parts/16_BF_HAPPY'));
+		bf16happy.setGraphicSize(Std.int(bf16happy.width * 0.67));
+		add(bf16happy);	
+		bf16happy.visible = false;
+
+		bf16scared = new FlxSprite(-70, 50).loadGraphic(Paths.image('cutscenes/cutscene16parts/16_BF_SCARED'));
+		bf16scared.setGraphicSize(Std.int(bf16scared.width * 0.67));
+		add(bf16scared);	
+		bf16scared.visible = false;
+
+		microphone16 = new FlxSprite(300, 400).loadGraphic(Paths.image('cutscenes/cutscene16parts/16_mic'));
+		microphone16.setGraphicSize(Std.int(microphone16.width * 0.67));
+		add(microphone16);	
+		microphone16.visible = false;
+
+		shocked16 = new FlxSprite(150, 300).loadGraphic(Paths.image('cutscenes/cutscene16parts/16_WA'));
+		shocked16.setGraphicSize(Std.int(shocked16.width * 0.67));
+		add(shocked16);	
+		shocked16.visible = false;
+
+		jojo102 = new FlxSprite(1000, 390).loadGraphic(Paths.image('cutscenes/cutscene10parts/jojo102'));
+		jojo102.setGraphicSize(Std.int(jojo102.width * 0.67));
+		jojo102.angle = 10;
+		add(jojo102);	
+		jojo102.visible = false;
+
+		jojo10 = new FlxSprite(-25, 100).loadGraphic(Paths.image('cutscenes/cutscene10parts/jojo10'));
+		jojo10.setGraphicSize(Std.int(jojo10.width * 0.34));
+		jojo10.angle = -10;
+		add(jojo10);	
+		jojo10.visible = false;
+
+		jojo16 = new FlxSprite(1060, 210).loadGraphic(Paths.image('cutscenes/cutscene6parts/jojo1'));
+		jojo16.setGraphicSize(Std.int(jojo16.width * 0.50));
+		jojo16.angle = 15;
+		add(jojo16);	
+		jojo16.visible = false;
 		}
 
 
@@ -264,7 +309,7 @@ class DialogueBox extends FlxSpriteGroup
 		swagDialogue = new FlxTypeText(280, 500, Std.int(FlxG.width * 0.6), "", 32);
 		swagDialogue.font = 'FOT-PopJoy Std B';
 		swagDialogue.color = 0xFF000000;
-		swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
+		//swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
 		add(swagDialogue);
 
 		dialogue = new Alphabet(0, 80, "", false, true);
@@ -289,9 +334,36 @@ class DialogueBox extends FlxSpriteGroup
 	}
 
 	var onetime:Bool = true;
+	var shake:Bool = false;
+	var okflippinstopdashake:Bool = false;
 
 	override function update(elapsed:Float)
 	{
+
+		if (zoosh == true)
+		{
+			cutsceneImage.x = FlxG.random.int(-20, 20);
+			cutsceneImage.y = FlxG.random.int(-20, 20);
+		}
+
+		if (shake == true)
+		{
+			shake = false;
+			bg16.x = FlxG.random.int(-326, -314);
+			bg16.y = FlxG.random.int(-173, -186);
+			bf16happy.x = FlxG.random.int(-76, -64);
+			bf16happy.y = FlxG.random.int(-4, -16);
+			bf16scared.x = FlxG.random.int(-76, -64);
+			bf16scared.y = FlxG.random.int(56, 44);
+			holepuncher.x = FlxG.random.int(74, 85);
+			holepuncher.y = FlxG.random.int(-94, -106);
+
+		new FlxTimer().start(0.005, function(tmr:FlxTimer)
+			{
+				if (okflippinstopdashake == false)
+				shake = true;
+			});
+		}
 
 		if (onetime == true)
 		{
@@ -385,7 +457,25 @@ class DialogueBox extends FlxSpriteGroup
 			{
 				jojoanimate();
 			});
+
+		case 'discodevil':
+		jojo102.x = FlxG.random.int(1000, 1002);
+		jojo102.y = FlxG.random.int(389, 391);
+		jojo10.x = FlxG.random.int(-26, -24);
+		jojo10.y = FlxG.random.int(99, 101);
+		jojo16.x = FlxG.random.int(1059, 1061);
+		jojo16.y = FlxG.random.int(209, 211);
+		new FlxTimer().start(0.05, function(tmr:FlxTimer)
+			{
+				jojoanimate();
+			});
+
 		}
+	}
+
+	function shakescreen()
+	{
+		
 	}
 
 	function gfshake()
@@ -447,6 +537,19 @@ class DialogueBox extends FlxSpriteGroup
 					FlxTween.tween(lines10, {alpha: 0}, 2, {ease: FlxEase.circOut});
 					FlxTween.tween(jojo102, {alpha: 0}, 2, {ease: FlxEase.circOut});
 					FlxTween.tween(jojo10, {alpha: 0}, 2, {ease: FlxEase.circOut});
+
+					case 'discodevil':
+					FlxTween.tween(bg16, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(bf16scared, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(holepuncher, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(bf16happy, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(smoke16, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(people16, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(microphone16, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(shocked16, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(jojo102, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(jojo16, {alpha: 0}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(jojo10, {alpha: 0}, 2, {ease: FlxEase.circOut});
 				}
 
 
@@ -460,13 +563,59 @@ class DialogueBox extends FlxSpriteGroup
 						FlxTween.tween(skipText, {alpha: 0}, 2, {ease: FlxEase.circOut});
 					}, 5);
 
+					if (PlayState.continuetext == true)
+					{
+						switch(PlayState.PlayState.SONG.song.toLowerCase())
+						{
+							case 'missilemaestro':
+							tbctxt = new FlxText(0, 0, FlxG.width,
+							"To be continued in chapter 2...",
+							64);
+							case 'elasticentertainer':
+							tbctxt = new FlxText(0, 0, FlxG.width,
+							"To be continued in chapter 3...",
+							64);
+							case 'discodevil':
+							tbctxt = new FlxText(0, 0, FlxG.width,
+							"To be continued in chapter 4...",
+							64);
+
+
+						}
+
+					tbctxt.setFormat(Paths.font("mario.ttf"), 64, CENTER);
+					tbctxt.borderColor = FlxColor.BLACK;
+					tbctxt.borderSize = 3;
+					tbctxt.borderStyle = FlxTextBorderStyle.OUTLINE;
+					tbctxt.screenCenter();
+					tbctxt.alpha = 0;
+					add(tbctxt);
+					FlxTween.tween(tbctxt, {alpha: 1}, 6, {ease: FlxEase.circOut});
+
+					new FlxTimer().start(4, function(tmr:FlxTimer)
+					{
+						FlxTween.tween(tbctxt, {alpha: 0}, 4, {
+				onComplete: function(twn:FlxTween)
+				{
+					finishThing();
+					kill();
+					FlxG.sound.music.stop();
+				}
+				});
+					});
+					}
+					else
+					{
 					new FlxTimer().start(2, function(tmr:FlxTimer)
 					{
-						finishThing();
-						kill();
-						FlxG.sound.music.stop();
+					finishThing();
+					kill();
+					FlxG.sound.music.stop();
 					});
+					}
 	}
+
+	var zoosh = false;
 
 	function startDialogue():Void
 	{
@@ -489,6 +638,26 @@ class DialogueBox extends FlxSpriteGroup
 					case "hide":
 						cutsceneImage.visible = false;
 						cutsceneImage.alpha = 0;
+					case "flash":
+						var white:FlxSprite = new FlxSprite(0, 0).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.WHITE);
+					white.scrollFactor.set();
+					add(white);	
+					FlxTween.tween(white, {alpha: 0}, 0.5, {
+				onComplete: function(twn:FlxTween)
+				{
+					remove(white);
+				}
+				});
+					case "tear":
+						cutsceneImage.width = 1.2;
+						zoosh = true;
+						new FlxTimer().start(0.25, function(tmr:FlxTimer)
+					{
+					zoosh = false;
+					cutsceneImage.width = 1;
+					cutsceneImage.x = 0;
+					cutsceneImage.y = 0;
+					}); 
 					default:
 					if (firstimage == true)
 				{
@@ -496,13 +665,13 @@ class DialogueBox extends FlxSpriteGroup
 					cutsceneImage.visible = true;
 					cutsceneImage.alpha = 0;
 					cutsceneImage.loadGraphic(BitmapData.fromFile("assets/dialogue/images/bg/" + curAnim + ".png"));
-					FlxTween.tween(cutsceneImage, {alpha: 1}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(cutsceneImage, {alpha: 1}, 1, {ease: FlxEase.circOut});
 				}
 				else
 				{
 					cutsceneImage.visible = true;
 					cutsceneImage.loadGraphic(BitmapData.fromFile("assets/dialogue/images/bg/" + curAnim + ".png"));
-					FlxTween.tween(cutsceneImage, {alpha: 1}, 2, {ease: FlxEase.circOut});
+					FlxTween.tween(cutsceneImage, {alpha: 1}, 1, {ease: FlxEase.circOut});
 				}
 				}
 
@@ -510,7 +679,7 @@ class DialogueBox extends FlxSpriteGroup
 				skipDialogue = true;
 				fadeImage.visible = true;
 				fadeImage.loadGraphic(BitmapData.fromFile("assets/dialogue/images/bg/" + curAnim + ".png"));
-				FlxTween.tween(fadeImage, {alpha: 0}, 2, {
+				FlxTween.tween(fadeImage, {alpha: 0}, 1, {
 				onComplete: function(twn:FlxTween)
 				{
 					fadeImage.visible = false;
@@ -527,7 +696,14 @@ class DialogueBox extends FlxSpriteGroup
 						FlxG.sound.music.fadeIn(1, 0, 0.8);
 					default:
 						FlxG.sound.playMusic(Sound.fromFile("assets/dialogue/music/" + curAnim + ".ogg"), Std.parseFloat(dialogueList[0]));
+						FlxG.sound.music.volume = 0;
 				}
+
+			case "sound":
+				skipDialogue = true;
+				if (this.sound != null) this.sound.stop();
+				sound = new FlxSound().loadEmbedded(Sound.fromFile("assets/dialogue/sounds/" + curAnim + ".ogg"));
+				sound.play();
 				
 			case "cutscenesix":
 				holdtime = 2;
@@ -620,6 +796,59 @@ class DialogueBox extends FlxSpriteGroup
 			}); 
 				}
 
+			case "cutscenesixteen":
+				holdtime = 2;
+				animatedCutscene = true;
+				skipDialogue = true;
+				if (!bg16.visible)
+				{
+					bg16.visible = true;
+					bf16happy.visible = true;
+					new FlxTimer().start(1, function(tmr:FlxTimer)
+			{
+					holepuncher.visible = true;
+					FlxTween.tween(holepuncher.scale, {x:0.67, y:0.67}, 0.5);
+					//FlxTween.tween(holepuncher, {scale: x:1, y:1}, 0.5);
+					FlxTween.tween(holepuncher, { y: -100}, 0.5, {ease: FlxEase.quadOut}); 
+					FlxTween.tween(holepuncher, {x: 80}, 0.5, {
+					onComplete: function(twn:FlxTween)
+					{
+						shake = true;
+						jojoanimate();
+						jojo16.visible = true;
+						jojo102.visible = true;
+						jojo10.visible = true;
+						people16.visible = true;
+						shocked16.visible = true;
+						microphone16.visible = true;
+						FlxTween.tween(smoke16, {alpha: 1}, 0.5);
+						FlxTween.tween(smoke16, {y: 100}, 0.5);
+						FlxTween.tween(people16, {y: -50}, 0.7, {ease: FlxEase.quadOut});
+						FlxTween.tween(microphone16, {angle: -3}, 0.5);
+						FlxTween.tween(microphone16, {x: 180}, 0.5);
+						FlxTween.tween(shocked16, {x: 100}, 0.5);
+						FlxTween.tween(microphone16, {y: 450}, 0.5);
+						bf16happy.visible = false;
+						bf16scared.visible = true;
+						var white:FlxSprite = new FlxSprite(0, 0).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.WHITE);
+						white.scrollFactor.set();
+						add(white);	
+						FlxTween.tween(white, {alpha: 0}, 0.5, {
+						onComplete: function(twn:FlxTween)
+					{
+						okflippinstopdashake = true;
+						bf16scared.x = -70;
+						bf16scared.y = 50;
+						bg16.x = -320;
+						bg16.y = -180;
+						bg16.width = 0.67;
+					}
+						});
+					}
+					});
+			}); 
+				}
+
 
 
 			case "bf":
@@ -627,6 +856,7 @@ class DialogueBox extends FlxSpriteGroup
 				icons = new HealthIcon('bf', false);
 				changeposition();
 				add(icons);
+				changeSound('bftext',0.6);
 
 			case "gf":
 				remove(icons);
@@ -697,6 +927,77 @@ class DialogueBox extends FlxSpriteGroup
 			case "narrator":
 				remove(icons);
 				changeposition();
+				changeSound('pixelText',0.6);
+
+			case "yellowtoad":
+				remove(icons);
+				icons = new HealthIcon('yellowtoad', false);
+				changeposition();
+				add(icons);
+
+			case "prof":
+			remove(icons);
+				icons = new HealthIcon('prof', false);
+				changeposition();
+				add(icons);
+
+			case "dj":
+			remove(icons);
+				icons = new HealthIcon('dj', false);
+				changeposition();
+				add(icons);
+			
+			case "olivia":
+				remove(icons);
+				icons = new HealthIcon('olivia', false);
+				changeposition();
+				add(icons);
+
+			case "autumn":
+			remove(icons);
+				icons = new HealthIcon('autumn', false);
+				changeposition();
+				add(icons);
+
+			case "gondol":
+
+			remove(icons);
+				icons = new HealthIcon('gondol', false);
+				changeposition();
+				add(icons);
+
+			case "rubber":
+				remove(icons);
+				icons = new HealthIcon('rubber', false);
+				changeposition();
+				add(icons);
+
+			case "devil":
+			if (animatedCutscene == true)
+			{
+				animatedCutscene = false;
+				remove(icons);
+				icons = new HealthIcon('devil', false);
+				changeposition();
+				remove(box);
+				remove(swagDialogue);
+				remove(dropText);
+				new FlxTimer().start(holdtime, function(tmr:FlxTimer)
+			{
+				box.animation.play('normalOpen');
+				add(box);	
+				add(icons);	
+				add(dropText);
+				add(swagDialogue);
+			}); 
+			}
+			else
+			{
+				remove(icons);
+				icons = new HealthIcon('devil', false);
+				changeposition();
+				add(icons);
+			}
 		}
 
 		if(!skipDialogue){
@@ -747,7 +1048,7 @@ class DialogueBox extends FlxSpriteGroup
 		swagDialogue = new FlxTypeText(200, 500, Std.int(FlxG.width * 0.6), "", 32);
 		swagDialogue.font = 'FOT-PopJoy Std B';
 		swagDialogue.color = 0xFF000000;
-		swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
+		//swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
 		add(swagDialogue);
 
 		default:
@@ -763,7 +1064,7 @@ class DialogueBox extends FlxSpriteGroup
 		swagDialogue = new FlxTypeText(280, 500, Std.int(FlxG.width * 0.6), "", 32);
 		swagDialogue.font = 'FOT-PopJoy Std B';
 		swagDialogue.color = 0xFF000000;
-		swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
+		//swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
 		add(swagDialogue);
 	}
 
@@ -782,5 +1083,10 @@ class DialogueBox extends FlxSpriteGroup
 		dialogueList[0] = dialogueList[0].substr(splitName[1].length + splitName[2].length  + 3).trim();
 		
 		
+	}
+
+	function changeSound(sound:String, volume:Float){
+	swagDialogue.sounds = [FlxG.sound.load(Paths.sound(sound, 'dialogue'), volume)];
+	
 	}
 }

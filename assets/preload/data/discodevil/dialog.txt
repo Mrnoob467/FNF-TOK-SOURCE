@@ -1,0 +1,16 @@
+:music:3-6:
+:music:fadeIn:
+:bg:discodevil1:
+:bf:default:~Yea!
+:dj:default:Now THAT was a great performance!
+:olivia:default:You really showed them who's boss!
+:cutscenesixteen:
+:sound:floorbreak:
+:music:1-4:
+:music:fadeIn:
+:devil:default:Now that's what I'm talkin' about! You have really good taste in music, kid!
+:bf:default:BEe-
+:devil:default:I can't shake the feeling you're after the streamer though...
+:bf:default:Bap >:(
+:devil:default:You're great on the mic, but how good are you on the dance floor?
+:devil:default:It's time to get down!

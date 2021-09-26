@@ -45,6 +45,12 @@ class HealthIcon extends FlxSprite
 		animation.add('olivia', [36, 37], 0, false, isPlayer);
 		animation.add('boogie', [34, 35], 0, false, isPlayer);
 		animation.add('devil', [32, 33], 0, false, isPlayer);
+		animation.add('autumn', [38, 39], 0, false, isPlayer);
+		animation.add('gondol', [40, 41], 0, false, isPlayer);
+		animation.add('yape', [42, 43], 0, false, isPlayer);
+		animation.add('prof', [45], 0, false, isPlayer);
+		animation.add('dj', [46], 0, false, isPlayer);
+		animation.add('yellowtoad', [44], 0, false, isPlayer);
 		animation.play(char);
 
 		switch(char)

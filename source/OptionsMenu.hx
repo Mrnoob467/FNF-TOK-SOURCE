@@ -58,12 +58,13 @@ class OptionsMenu extends MusicBeatState
 			#end
 			new FlashingLightsOption("Toggle flashing lights that can cause epileptic seizures and strain."),
 			new WatermarkOption("Enable and disable all watermarks from the engine."),
-			new Copyright("Redone instrumentals to avoid Nintendo's copyright!"),
+			//new Copyright("Redone instrumentals to avoid Nintendo's copyright!"),
 			new BotPlay("Showcase your charts and mods with autoplay.")
 		]),
 
 		new OptionCategory("Language", [
-			new LanguageOption(""),
+			new EnglishOption(""),
+			new LanguageOption("")
 		])
 		
 	];
@@ -79,11 +80,12 @@ class OptionsMenu extends MusicBeatState
 	override function create()
 	{
 		instance = this;
-		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image("menuDesat"));
+		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image("menuBG"));
 
 		menuBG.updateHitbox();
 		menuBG.screenCenter();
 		menuBG.antialiasing = true;
+		menuBG.setGraphicSize(Std.int(menuBG.width * 0.6));
 		add(menuBG);
 
 		grpControls = new FlxTypedGroup<Alphabet>();

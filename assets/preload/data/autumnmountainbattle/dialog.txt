@@ -1,0 +1,12 @@
+:bg:autumn1:
+:music:2-1:
+:music:fadeIn:
+:narrator:default:Boyfriend and Girlfriend arrive at the beautiful site of Autumn Mountain. 
+:narrator:default:They look around to see if they can spot the hero in red.
+:fade:autumn1:
+:bg:autumn2:
+:narrator:default:However, the calm and mystic illusion was shattered as soon as more folded minions came into view.
+:narrator:default:Boyfriend is unphased, considering the last encounter.
+:autumn:default:Hey, you there! Where do you think you're going?
+:bf:default:Sigh... Beeep~...
+:autumn:default:This is where your path truly ends! Prepare to face our wrath!

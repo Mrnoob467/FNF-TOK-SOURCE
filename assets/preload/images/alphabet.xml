@@ -214,6 +214,10 @@
 	<SubTexture name="Ñ capital0001" x="0" y="531" width="49" height="89"/>
 	<SubTexture name="Ñ bold0000" x="0" y="531" width="49" height="89"pivotX="0" pivotY="0"/>
 	<SubTexture name="Ñ bold0001" x="0" y="531" width="49" height="89"/>
+	<SubTexture name="Ê capital0000" x="50" y="531" width="49" height="89"pivotX="0" pivotY="0"/>
+	<SubTexture name="Ê capital0001" x="50" y="531" width="49" height="89"/>
+	<SubTexture name="Ê bold0000" x="50" y="531" width="49" height="89"pivotX="0" pivotY="0"/>
+	<SubTexture name="Ê bold0001" x="50" y="531" width="49" height="89"/>
 	<SubTexture name="O bold0000" x="488" y="67" width="50" height="69" pivotX="0.15" pivotY="0"/>
 	<SubTexture name="O bold0001" x="488" y="67" width="50" height="69"/>
 	<SubTexture name="O bold0002" x="711" y="67" width="50" height="69"/>
@@ -428,8 +432,8 @@
 	<SubTexture name="n lowercase0003" x="876" y="485" width="27" height="30"/>
 	<SubTexture name="ñ lowercase0000" x="90" y="484" width="27" height="30" pivotX="0" pivotY="0"/>
 	<SubTexture name="ñ lowercase0001" x="90" y="484" width="27" height="30"/>
-	<SubTexture name="ñ lowercase0002" x="876" y="485" width="27" height="30"/>
-	<SubTexture name="ñ lowercase0003" x="876" y="485" width="27" height="30"/>
+	<SubTexture name="ê lowercase0000" x="876" y="485" width="27" height="30"/>
+	<SubTexture name="ê lowercase0001" x="876" y="485" width="27" height="30"/>
 	<SubTexture name="o  lowercase0000" x="303" y="472" width="30" height="32" pivotX="0" pivotY="0"/>
 	<SubTexture name="o  lowercase0001" x="303" y="472" width="30" height="32"/>
 	<SubTexture name="o  lowercase0002" x="943" y="479" width="30" height="32"/>

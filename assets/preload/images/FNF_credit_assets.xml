@@ -2,14 +2,26 @@
 <TextureAtlas imagePath="FNF_credit_assets.png">
 	<!-- Created with Adobe Animate version 21.0.0.35450 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="lemonking color0000" x="0" y="0" width="2024" height="599"/>
-	<SubTexture name="lemonking grey0000" x="2024" y="0" width="2024" height="599"/>
-	<SubTexture name="mol color0000" x="0" y="599" width="2024" height="599"/>
-	<SubTexture name="mol grey0000" x="2024" y="599" width="2024" height="599"/>
-	<SubTexture name="ninkey color0000" x="0" y="1198" width="2024" height="599"/>
-	<SubTexture name="ninkey grey0000" x="2024" y="1198" width="2024" height="599"/>
-	<SubTexture name="ninkey grey0001" x="2024" y="1198" width="2024" height="599"/>
-	<SubTexture name="ninkey grey0002" x="2024" y="1198" width="2024" height="599"/>
-	<SubTexture name="snak color0000" x="0" y="1797" width="2024" height="599"/>
-	<SubTexture name="snak grey0000" x="2024" y="1797" width="2024" height="599"/>
+	<SubTexture name="aizakku color0000" x="1" y="1" width="1995" height="496"/>
+	<SubTexture name="aizakku grey0000" x="1997" y="1" width="1995" height="496"/>
+	<SubTexture name="doodlz color0000" x="3993" y="1" width="1995" height="496"/>
+	<SubTexture name="doodlz grey0000" x="5989" y="1" width="1995" height="496"/>
+	<SubTexture name="fruitsy color0000" x="1" y="498" width="1995" height="496"/>
+	<SubTexture name="fruitsy grey0000" x="1997" y="498" width="1995" height="496"/>
+	<SubTexture name="hostkal color0000" x="3993" y="498" width="1995" height="496"/>
+	<SubTexture name="hostkal grey0000" x="5989" y="498" width="1995" height="496"/>
+	<SubTexture name="juno color0000" x="1" y="995" width="1995" height="496"/>
+	<SubTexture name="juno grey0000" x="1997" y="995" width="1995" height="496"/>
+	<SubTexture name="lemonking color0000" x="3993" y="995" width="1995" height="496"/>
+	<SubTexture name="lemonking grey0000" x="5989" y="995" width="1995" height="496"/>
+	<SubTexture name="mol color0000" x="1" y="1492" width="1995" height="496"/>
+	<SubTexture name="mol grey0000" x="1997" y="1492" width="1995" height="496"/>
+	<SubTexture name="ninkey color0000" x="3993" y="1492" width="1995" height="496"/>
+	<SubTexture name="ninkey grey0000" x="5989" y="1492" width="1995" height="496"/>
+	<SubTexture name="snak color0000" x="1" y="1989" width="1995" height="496"/>
+	<SubTexture name="snak grey0000" x="1997" y="1989" width="1995" height="496"/>
+	<SubTexture name="soulegal color0000" x="3993" y="1989" width="1995" height="496"/>
+	<SubTexture name="soulegal grey0000" x="5989" y="1989" width="1995" height="496"/>
+	<SubTexture name="xyle color0000" x="1" y="2486" width="1995" height="496"/>
+	<SubTexture name="xyle grey0000" x="1997" y="2486" width="1995" height="496"/>
 </TextureAtlas>

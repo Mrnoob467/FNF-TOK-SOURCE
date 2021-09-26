@@ -360,7 +360,7 @@ class TitleState extends MusicBeatState
 
 			MainMenuState.firstStart = true;
 
-				FlxTween.tween(gfDance, { x: 560 }, 0.6, {ease: FlxEase.quadInOut});
+				FlxTween.tween(gfDance, { x: -60 }, 0.6, {ease: FlxEase.quadInOut});
 				new FlxTimer().start(0.6, function(tmr:FlxTimer)
 		{
 				FlxTween.tween(gfDance, { x: 2000 }, 1.4, {ease: FlxEase.quadInOut});
@@ -466,7 +466,7 @@ class TitleState extends MusicBeatState
 				addMoreText('Mol');
 				addMoreText('LemonKing');
 				addMoreText('Snak');
-				addMoreText('Bubba');
+				addMoreText('Project Funky Paper Support Team');
 			// credTextShit.text += '\nlmao';
 			case 15:
 				deleteCoolText();
@@ -501,14 +501,14 @@ class TitleState extends MusicBeatState
 			FlxG.camera.flash(FlxColor.WHITE, 4);
 			remove(credGroup);
 			skippedIntro = true;
-			gfDance.x = -800;
+			gfDance.x = -1200;
 			logoBl.x = -800;
 			new FlxTimer().start(1.5, function(tmr:FlxTimer)
 		{
-				FlxTween.tween(gfDance, { x: 660 }, 0.6, {ease: FlxEase.quadInOut});
+				FlxTween.tween(gfDance, { x: 60 }, 0.6, {ease: FlxEase.quadInOut});
 			new FlxTimer().start(0.6, function(tmr:FlxTimer)
 		{
-				FlxTween.tween(gfDance, { x: 600 }, 0.6, {ease: FlxEase.quadInOut});
+				FlxTween.tween(gfDance, { x: 0 }, 0.6, {ease: FlxEase.quadInOut});
 				new FlxTimer().start(1, function(tmr:FlxTimer)
 		{
 				FlxTween.tween(logoBl, { x: 320 }, 0.3, {ease: FlxEase.quadInOut});

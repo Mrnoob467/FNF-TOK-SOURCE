@@ -635,7 +635,7 @@ class Character extends FlxSprite
 			case 'olivia':
 				tex = Paths.getSparrowAtlas('characters/olivia');
 				frames = tex;
-				setGraphicSize(Std.int(width * 0.5));
+				setGraphicSize(Std.int(width * 0.6));
 				animation.addByPrefix('idle', 'Idle', 24, false);
 				animation.addByPrefix('singUP', 'Sing Up', 24, false);
 				animation.addByPrefix('singDOWN', 'Sing Down', 24, false);
@@ -685,6 +685,60 @@ class Character extends FlxSprite
 				addOffset("singDOWN", -42, -94);
 
 				playAnim('idle');
+
+			case 'autumn':
+				tex = Paths.getSparrowAtlas('characters/autumn');
+				frames = tex;
+				setGraphicSize(Std.int(width * 0.6));
+				animation.addByPrefix('idle', 'Idle', 24, false);
+				animation.addByPrefix('singUP', 'Sing Up', 24, false);
+				animation.addByPrefix('singDOWN', 'Sing Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Sing Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Sing Right', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", -15, 46);
+				addOffset("singRIGHT", -15, -48);
+				addOffset("singLEFT", 24, -9);
+				addOffset("singDOWN", 4, -90);
+
+				playAnim('idle');
+
+			case 'gondol':
+				tex = Paths.getSparrowAtlas('characters/gondol');
+				frames = tex;
+				setGraphicSize(Std.int(width * 0.6));
+				animation.addByPrefix('idle', 'Idle', 24, false);
+				animation.addByPrefix('singUP', 'Sing Up', 24, false);
+				animation.addByPrefix('singDOWN', 'Sing Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Sing Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Sing Right', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", 36, -21);
+				addOffset("singRIGHT", 13, 4);
+				addOffset("singLEFT", 26, 13);
+				addOffset("singDOWN", 25, 5);
+
+				playAnim('idle');
+
+			case 'yape':
+				tex = Paths.getSparrowAtlas('characters/YAPE');
+				frames = tex;
+				//setGraphicSize(Std.int(width * 0.6));
+				animation.addByPrefix('idle', 'Idle', 24, false);
+				animation.addByPrefix('singUP', 'Sing Up', 24, false);
+				animation.addByPrefix('singDOWN', 'Sing Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Sing Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Sing Right', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", -23, 32);
+				addOffset("singRIGHT", -57, -36);
+				addOffset("singLEFT", 10, -34);
+				addOffset("singDOWN", -2, -23);
+
+				playAnim('idle');
 		}
 
 		dance();
@@ -727,7 +781,7 @@ class Character extends FlxSprite
 				dadVar = 6.1;
 			if (holdTimer >= Conductor.stepCrochet * dadVar * 0.001)
 			{
-				trace('dance');
+				//trace('dance');
 				dance();
 				holdTimer = 0;
 			}

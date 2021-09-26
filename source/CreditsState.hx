@@ -27,19 +27,16 @@ class CreditsState extends MusicBeatState
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
 
-	var creditShit:Array<String> = ['ninkey', 'mol', 'snak', 'lemonking'];
+	var creditShit:Array<String> = ['ninkey', 'mol', 'snak', 'lemonking', 'doodlz', 'fruitsy', 'hostkal', 'soulegal', 'aizakku', 'xyle', 'juno'];
 
 	var newGaming:FlxText;
 	var newGaming2:FlxText;
-	public static var firstStart:Bool = true;
 
 	public static var nightly:String = "";
 
 	public static var kadeEngineVer:String = "1.5.2" + nightly;
 	public static var gameVer:String = "0.2.7.1";
 
-	var magenta:FlxSprite;
-	var camFollow:FlxObject;
 	public static var finishedFunnyMove:Bool = false;
 
 	override function create()
@@ -56,29 +53,12 @@ class CreditsState extends MusicBeatState
 
 		persistentUpdate = persistentDraw = true;
 
-		var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('menuBGCredits'));
-		bg.scrollFactor.x = 0;
-		bg.scrollFactor.y = 0.10;
-		bg.setGraphicSize(Std.int(bg.width * 1.1));
+		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuBGCredits'));
 		bg.updateHitbox();
 		bg.screenCenter();
+		bg.setGraphicSize(Std.int(bg.width * 1.35));
 		bg.antialiasing = true;
 		add(bg);
-
-		camFollow = new FlxObject(0, 0, 1, 1);
-		add(camFollow);
-
-		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuDesat'));
-		magenta.scrollFactor.x = 0;
-		magenta.scrollFactor.y = 0.10;
-		magenta.setGraphicSize(Std.int(magenta.width * 1.1));
-		magenta.updateHitbox();
-		magenta.screenCenter();
-		magenta.visible = false;
-		magenta.antialiasing = true;
-		magenta.color = 0xFFfd719b;
-		add(magenta);
-		// magenta.scrollFactor.set();
 
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
@@ -92,26 +72,57 @@ class CreditsState extends MusicBeatState
 			menuItem.animation.addByPrefix('idle', creditShit[i] + " grey", 24);
 			menuItem.animation.addByPrefix('selected', creditShit[i] + " color", 24);
 			menuItem.animation.play('idle');
-			menuItem.setGraphicSize(Std.int(menuItem.width * 0.45));
+			menuItem.setGraphicSize(Std.int(menuItem.width * 0.3));
 			menuItem.ID = i;
-			menuItem.screenCenter(X);
+			switch (menuItem.ID)
+			{
+				case 0:
+				menuItem.y = 0;
+
+				case 1:
+				menuItem.y += 180;
+
+				case 2:
+				menuItem.y += 360;
+
+				case 3:
+				menuItem.y += 540;
+
+				case 4:
+				menuItem.y = 0;
+				menuItem.x += 700;
+
+				case 5:
+				menuItem.y += 100;
+				menuItem.x += 700;
+
+				case 6:
+				menuItem.y += 200;
+				menuItem.x += 700;
+
+				case 7:
+				menuItem.y += 310;
+				menuItem.x += 700;
+
+				case 8:
+				menuItem.y = 400;
+				menuItem.x += 700;
+
+				case 9:
+				menuItem.y += 500;
+				menuItem.x += 700;
+
+				case 10:
+				menuItem.y += 600;
+				menuItem.x += 700;
+			}
 			menuItem.updateHitbox();
 			menuItems.add(menuItem);
 			menuItem.scrollFactor.set();
 			menuItem.antialiasing = true;
-			if (firstStart)
-				FlxTween.tween(menuItem,{y: -50 + (i * 180)},1 + (i * 0.25) ,{ease: FlxEase.expoInOut, onComplete: function(flxTween:FlxTween) 
-					{ 
-						finishedFunnyMove = true; 
-						changeItem();
-					}});
-			else
-				menuItem.y = -50 + (i * 180);
+			finishedFunnyMove = true; 
+			changeItem();
 		}
-
-		firstStart = false;
-
-		FlxG.camera.follow(camFollow, null, 0.60 * (60 / FlxG.save.data.fpsCap));
 
 		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, gameVer +  (Main.watermarks ? " FNF - " + kadeEngineVer + " Kade Engine" : ""), 12);
 		versionShit.scrollFactor.set();
@@ -151,7 +162,26 @@ class CreditsState extends MusicBeatState
 			if (controls.DOWN_P)
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'));
+				if (curSelected != 10)
 				changeItem(1);
+			}
+
+			if (controls.RIGHT_P)
+			{
+				FlxG.sound.play(Paths.sound('scrollMenu'));
+				changeItem(4);
+			}
+
+			if (controls.LEFT_P)
+			{
+				FlxG.sound.play(Paths.sound('scrollMenu'));
+				if (curSelected >= 8)
+				{
+				curSelected = 3;
+				changeItem();
+				}
+				else
+				changeItem(-4);
 			}
 
 			if (controls.BACK)
@@ -161,65 +191,43 @@ class CreditsState extends MusicBeatState
 
 			if (controls.ACCEPT)
 			{
-					selectedSomethin = true;
-					FlxG.sound.play(Paths.sound('confirmMenu'));
-					
-					if (FlxG.save.data.flashing)
-						FlxFlicker.flicker(magenta, 1.1, 0.15, false);
+				switch (creditShit[curSelected])
+				{
+				case 'ninkey':
+					fancyOpenURL("https://twitter.com/NinKey69");
 
-					menuItems.forEach(function(spr:FlxSprite)
-					{
-						if (curSelected != spr.ID)
-						{
+				case 'lemonking':
+					fancyOpenURL("https://twitter.com/1emonking");
 
-						}
-						else
-						{
-							if (FlxG.save.data.flashing)
-							{
-								FlxFlicker.flicker(spr, 1, 0.06, false, false, function(flick:FlxFlicker)
-								{
-									sendtobrazil();
-								});
-							}
-							else
-							{
-								new FlxTimer().start(1, function(tmr:FlxTimer)
-								{
-									sendtobrazil();
-								});
-							}
-						}
-					});
+				case 'mol':
+					fancyOpenURL("https://twitter.com/ArtPanz");
+
+				case 'doodlz':
+					fancyOpenURL("https://twitter.com/xdoodlz");
+
+				case 'snak':
+					fancyOpenURL("https://twitter.com/200thSnak");
+
+				case 'fruitsy':
+					fancyOpenURL("https://twitter.com/FruitsyOG");
+
+				case 'soulegal':
+					fancyOpenURL("https://twitter.com/nickstwt");
+				
+				case 'juno':
+					fancyOpenURL("https://twitter.com/JunoSongsYT");
+
+				case 'xyle':
+					fancyOpenURL("https://www.youtube.com/c/XyleGD");
 				}
+			}
 			}
 
 		super.update(elapsed);
-
-		menuItems.forEach(function(spr:FlxSprite)
-		{
-			spr.screenCenter(X);
-		});
 	}
-	
-	function sendtobrazil()
-	{
-		var daChoice:String = creditShit[curSelected];
 
-		switch (daChoice)
-		{
-			case 'ninkey':
-				fancyOpenURL("https://twitter.com/NinKey6");
-			case 'artpanz':
-				fancyOpenURL("https://twitter.com/ArtPanz");
-			case 'snak':
-				fancyOpenURL("https://twitter.com/200thSnak");
-			case 'lemonking':
-				fancyOpenURL("https://twitter.com/1emonking");
-		}
-		transOut = null;
-		FlxG.switchState(new CreditsState());
-	}
+
+	var yourealreadyonthatmf:Bool = false;
 
 	function changeItem(huh:Int = 0)
 	{
@@ -227,10 +235,10 @@ class CreditsState extends MusicBeatState
 		{
 			curSelected += huh;
 
-			if (curSelected >= menuItems.length)
-				curSelected = 0;
+			if (curSelected >= 11)
+				curSelected = 10;
 			if (curSelected < 0)
-				curSelected = menuItems.length - 1;
+				curSelected = 0;
 		}
 		menuItems.forEach(function(spr:FlxSprite)
 		{
@@ -239,7 +247,6 @@ class CreditsState extends MusicBeatState
 			if (spr.ID == curSelected && finishedFunnyMove)
 			{
 				spr.animation.play('selected');
-				camFollow.setPosition(spr.getGraphicMidpoint().x, spr.getGraphicMidpoint().y);
 			}
 
 			spr.updateHitbox();

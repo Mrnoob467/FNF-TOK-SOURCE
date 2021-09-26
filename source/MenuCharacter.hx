@@ -22,14 +22,10 @@ class CharacterSetting
 class MenuCharacter extends FlxSprite
 {
 	private static var settings:Map<String, CharacterSetting> = [
-		'bf' => new CharacterSetting(-80, -260, 0.5, true),
-		'gf' => new CharacterSetting(100, -55, 1.5, true),
-		'colors' => new CharacterSetting(80, 0, 3.5), // (-15, 130)
-		'spooky' => new CharacterSetting(-165, -160),
-		'pico' => new CharacterSetting(0, 0, 1.0, true),
-		'mom' => new CharacterSetting(-30, 140, 0.85),
-		'parents-christmas' => new CharacterSetting(100, 130, 1.8),
-		'senpai' => new CharacterSetting(-40, -45, 1.4)
+		'bf' => new CharacterSetting(-80, -245, 0.5, true),
+		'colors' => new CharacterSetting(80, -100, 3), // (-15, 130)
+		'rubber' => new CharacterSetting(85, 150, 2.1),
+		'punch' => new CharacterSetting(200, -70, 3.5, false),
 	];
 
 	private var flipped:Bool = false;
@@ -45,13 +41,9 @@ class MenuCharacter extends FlxSprite
 
 		animation.addByPrefix('bf', "BF idle dance white", 24);
 		animation.addByPrefix('bfConfirm', 'BF HEY!!', 24, false);
-		animation.addByPrefix('gf', "GF Dancing Beat WHITE", 24);
 		animation.addByPrefix('colors', "colors idle", 24);
-		animation.addByPrefix('spooky', "spooky dance idle BLACK LINES", 24);
-		animation.addByPrefix('pico', "Pico Idle Dance", 24);
-		animation.addByPrefix('mom', "Mom Idle BLACK LINES", 24);
-		animation.addByPrefix('parents-christmas', "Parent Christmas Idle", 24);
-		animation.addByPrefix('senpai', "SENPAI idle Black Lines", 24);
+		animation.addByPrefix('rubber', "rubber idle", 24);
+		animation.addByPrefix('punch', "devil idle", 24);
 
 		setGraphicSize(Std.int(width * scale));
 		updateHitbox();
@@ -64,10 +56,11 @@ class MenuCharacter extends FlxSprite
 			visible = false;
 			return;
 		}
-		else
+		else 
 		{
 			visible = true;
 		}
+
 
 		animation.play(character);
 

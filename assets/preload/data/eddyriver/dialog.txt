@@ -1,0 +1,26 @@
+:music:2-1:
+:music:fadeIn:
+:bg:eddy1:
+:gondol:default:Hey you, kid!
+:bf:default:Bop?
+:gondol:default:Yeah you! I saw you back there giving those pesky folded dorks what they deserved, that's quite the accomplishment!
+:fade:eddy1:
+:bg:eddy2:
+:bf:default:Bap beep skdep boop.
+:gondol:default:Hm? Mario you say? Of course I know him! 
+:gondol:default: He unfolded me so I carried him down the river to Scorching Sandpaper Desert.
+:bf:default:Beep! Skedop bop boop!
+:gondol:default: Sure thing mate! Hop in and I'll give you and your friend a ride!
+:music:2-river:
+:music:fadeIn:
+:fade:eddy2:
+:bg:eddy3:
+:narrator:default:While riding along the river, the toad broke the silence...
+:gondol:default: Hey kid.
+:bf:default:?
+:gondol:default:Would you mind doin' somethin' for me while we get there?
+:bf:default:Beep?
+:gondol:default:Are you up to give those vocal cords another go? Doin' the same route every day gets extremely boring.
+:bf:default:Boop beep!
+:gondol:default:Excellent! Singing in the rapids is gonna be quite interesting!
+:gondol:default:Mind the logs and stones! Crashing into them could be fatal.

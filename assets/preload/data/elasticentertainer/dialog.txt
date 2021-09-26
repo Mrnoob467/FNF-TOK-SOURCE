@@ -1,0 +1,46 @@
+:music:2-2:
+:music:fadeIn:
+:bg:elastic1:
+:gondol:default:Good job mate! Haven't had anyone with lungs like you for quite a while.
+:bf:default: (happy) Beep~
+:gondol:default:Alright we're approaching where I left Mario!
+:gondol:default:He left to go after the next stre-
+:music:stop:
+:narrator:default:???:MARIO!?
+:sound:rubberypunch:
+:sound:boatcrack:
+:bg:elastic2:
+:bg:flash:
+:bg:tear:
+:sound:waterpour:
+:music:1-4:
+:music:fadeIn:
+:narrator:default:Suddenly, a rubber band monster tips the boat and nabs girlfriend, sending Boyfriend and the river toad off the edge.
+:bf:default:BAH!?
+:sound:fallover:
+:bg:elastic3:
+:bg:tear:
+:bf:default:Bo-!
+:rubber:default:You mean that little shrimp who had the NERVE to shoot me off MY stage during MY big debut?! He didn't even make sure I was gone for good!
+:rubber:default:I'll need a new audience for my second show, you three will make great faces for the crowd!
+:fade:elastic3:
+:bg:elastic4:
+:bf:default:Beep-
+:rubber:default:Now get over here you little...
+:fade:elastic4:
+:bg:elastic5:
+:narrator:default:Seeing Boyfriend's mic awoke something in the deranged entertainer...
+:rubber:default:Ooh... Another performer I see, you like a little song and dance?
+:bf:default:(Mad beep)
+:rubber:default:Want to know what works perfectly with that?
+:bg:hide:
+:sound:breaker:
+:bg:elastic6:
+:rubber:default:DRAMA AND ACTION!
+:rubber:default:Let me set the scene... I, a monster, have kidnapped you and your beloved, and you are forced to sing for your combined freedom!
+:rubber:default:Oh but there's a twist~ YOU WON'T MAKE IT OUT ALIVE!!
+:bf:default:BEEP?!
+:rubber:default:ohoho~ my writing is unmatched.
+:rubber:default:Let's see what you got, lover boy.
+
+

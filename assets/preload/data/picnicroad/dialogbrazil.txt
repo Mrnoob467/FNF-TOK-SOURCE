@@ -1,0 +1,19 @@
+:bg:picnic1:
+:music:1-1:
+:music:fadeIn:
+:narrator:default:Boyfriend e uma Girlfriend desfigurada chegam na Cidade dos Toads, onde o Festival Origami está acontecendo.
+:narrator:default:Entretanto, para um festival tudo está estranhamente muito quieto...
+:fade:picnic1:
+:bg:picnic2:
+:narrator:default:Em busca de transformar sua namorada de volta ao normal, os dois seguem pela Estrada do Piquenique.
+:fade:picnic2:
+:bg:picnic3:
+:music:1-2:
+:music:fadeIn:
+:toad:default:Ah, e aí! Você deve ser novo por aqui! Felizmente para você, você acabou de se encontrar com o melhor músico na cidade!
+:bf:default:Beep?
+:toad:default:Não acredita em mim? Beleza, vamos ter uma pequena competição amigável. Bem aqui, agora mesmo!
+:bf:default:...
+:toad:default:Qual é… só uma música bem rápida?
+:bf:default:Bop...
+:toad:default:Yaaay!

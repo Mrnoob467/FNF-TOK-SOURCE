@@ -1,0 +1,33 @@
+:music:2-2:
+:music:fadeIn:
+:bg:yellow1:
+:gondol:default:Alright! This is the stop.
+:bf:default:Beep Bo!
+:gondol:default:Bye bye! You two try to keep out of trouble!
+:fade:yellow1:
+:bg:yellow2:
+:narrator:default:They approach the entrance of Monty Mole Cave, leading to Scorching Sandpaper Desert...
+:narrator:default:A small feeling that a friend is no longer with us suddenly hits Boyfriend, as he looks at the massive crater.
+:narrator:default:...Yet, they proceed onwards.
+:music:3-2:
+:music:fadeIn:
+:fade:yellow2:
+:bg:yellow3:
+:narrator:default:They nab a Boot Car and drive towards the Yellow Streamer.
+:narrator:default:It was still intact, attached to some ancient temple.
+:fade:yellow3:
+:bg:yellow4:
+:narrator:default:But soon Boyfriend stopped, noticing another origami being blocking his path.
+:olivia:default:Oh?
+:fade:yellow4:
+:bg:yellow5:
+:olivia:default:Hello there traveler! My name's Olivia!
+:bf:default:Beep...
+:olivia:default: Oh, no I'm not a folded soldier. I've actually been following Mario for quite some time now.
+:bf:default: Bap Breep?!
+:olivia:default:Of course! He's in a battle right now so I'm waiting for him and the professor to come back...
+:olivia:default:Oh- Wait! I just noticed your microphone.
+:olivia:default:Do you like to sing?
+:bf:default:Beep Boo
+:olivia:default:Yay~ I was thinking we could do a little song while we wait. Wanna give it a go?
+:bf:default:Bop!

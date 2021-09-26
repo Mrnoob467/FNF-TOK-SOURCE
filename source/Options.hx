@@ -567,7 +567,7 @@ class WatermarkOption extends Option
 	}
 }
 
-class Copyright extends Option
+/*class Copyright extends Option
 {
 	public function new(desc:String)
 	{
@@ -586,9 +586,9 @@ class Copyright extends Option
 	
 	private override function updateDisplay():String
 		return "Copyright Free " + (FlxG.save.data.copyrightfree ? "off" : "on");
-}
+}*/
 
-class LanguageOption extends Option
+class EnglishOption extends Option
 {
 	public function new(desc:String)
 	{
@@ -605,7 +605,28 @@ class LanguageOption extends Option
 
 	private override function updateDisplay():String
 	{
-		return FlxG.save.data.english ? "Español" : "English";
+		return "English " + (FlxG.save.data.english ? "Off" : "On");
+	}
+}
+
+class LanguageOption extends Option
+{
+	public function new(desc:String)
+	{
+		super();
+		description = desc;
+	}
+
+	public override function press():Bool
+	{
+		FlxG.save.data.language = !FlxG.save.data.language;
+		display = updateDisplay();
+		return true;
+	}
+
+	private override function updateDisplay():String
+	{
+		return "Other Languages " + (FlxG.save.data.language ? "Español" : "Português");
 	}
 }
 

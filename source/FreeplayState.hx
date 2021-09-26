@@ -45,6 +45,31 @@ class FreeplayState extends MusicBeatState
 			songs.push(new SongMetadata(data[0], Std.parseInt(data[2]), data[1]));
 		}
 
+		if (FlxG.save.data.beatchapter1 == true)
+		{
+			addWeek(['RedStreamerBattle'], 1, ['picnic']);
+			addWeek(['MissileMaestro'], 1, ['colors']);
+		}
+
+		if (FlxG.save.data.beatchapter2 == true)
+		{
+			addWeek(['AutumnMountainBattle'], 2, ['autumn']);
+			addWeek(['EddyRiver'], 2, ['gondol']);
+			addWeek(['ElasticEntertainer'], 2, ['rubber']);
+		}
+
+		if (FlxG.save.data.beatchapter3 == true)
+		{
+			addWeek(['YellowStreamerBattle'], 3, ['olivia']);
+			addWeek(['ThrillsAtNight'], 3, ['boogie']);
+			addWeek(['DiscoDevil'], 3, ['devil']);
+		}
+
+		if (FlxG.save.data.yape == true)
+		{
+			addWeek(['TheAlmightyYape'], 4, ['yape']);
+		}
+
 		/* 
 			if (FlxG.sound.music != null)
 			{
@@ -294,14 +319,7 @@ class FreeplayState extends MusicBeatState
 		#end
 
 		#if PRELOAD_ALL
-		if (FlxG.save.data.copyrightfree)
-		{
-			FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
-		}
-		else
-		{
-			FlxG.sound.playMusic(Paths.instCOPYFREE(songs[curSelected].songName), 0);
-		}
+		FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
 
 		#end
 
