@@ -39,7 +39,7 @@ function update(elapsed)
 	end
 ---------------------------------------------------------------------------
 	if curStep >= 330 and curStep < 335 then
-		tweenCameraZoom(2,(crochet * 30) / 1000)
+		tweenCameraZoom(1,(crochet * 2) / 1000)
 	end
 ---------------------------------------------------------------------------
 	if curStep >= 335 and curStep < 463 then

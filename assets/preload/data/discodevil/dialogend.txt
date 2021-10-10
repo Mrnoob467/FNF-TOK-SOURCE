@@ -13,4 +13,3 @@
 :olivia:default: Let's go!
 :bf:default:Beep!
 :gf:default:.........
-:sound:tbc:

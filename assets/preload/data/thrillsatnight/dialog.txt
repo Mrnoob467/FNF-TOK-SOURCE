@@ -50,17 +50,17 @@
 :bg:tear:
 :bg:flash:
 :sound:screenshake:
-:narrator:default:???: No no no! You think that's groovy?! I thought the king would give me soldiers who had decent taste in music!
+:devil:blackened:No no no! You think that's groovy?! I thought the king would give me soldiers who had decent taste in music!
 :olivia:default:I don't know if the ancients liked to party... but whoever that is sure does.
 :olivia:default:Wait, if it's a friend of my brother's, that means the streamer must be in there with them!
 :bg:tear:
 :bg:flash:
 :sound:screenshake:
-:narrator:default:???: I want to groove, but I ain't coming out until that dance floor is full!
+:devil:blackened:I want to groove, but I ain't coming out until that dance floor is full!
 :bg:tear:
 :bg:flash:
 :sound:screenshake:
-:narrator:default:???: Also one of you fools, change that trash music this instant!
+:devil:blackened:Also one of you fools, change that trash music this instant!
 :fade:thrillsatnight7:
 :bg:thrillsatnight8:
 :narrator:default:The party splits up. While Boyfriend helps pick out a new song, Mario goes looking for people to fill the room.

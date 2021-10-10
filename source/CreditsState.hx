@@ -32,10 +32,7 @@ class CreditsState extends MusicBeatState
 	var newGaming:FlxText;
 	var newGaming2:FlxText;
 
-	public static var nightly:String = "";
-
-	public static var kadeEngineVer:String = "1.5.2" + nightly;
-	public static var gameVer:String = "0.2.7.1";
+	public static var gameVer:String = "0.5";
 
 	public static var finishedFunnyMove:Bool = false;
 
@@ -53,7 +50,7 @@ class CreditsState extends MusicBeatState
 
 		persistentUpdate = persistentDraw = true;
 
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuBGCredits'));
+		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuBGCredits', 'other'));
 		bg.updateHitbox();
 		bg.screenCenter();
 		bg.setGraphicSize(Std.int(bg.width * 1.35));
@@ -63,7 +60,7 @@ class CreditsState extends MusicBeatState
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
 
-		var tex = Paths.getSparrowAtlas('FNF_credit_assets');
+		var tex = Paths.getSparrowAtlas('FNF_credit_assets', 'other');
 
 		for (i in 0...creditShit.length)
 		{
@@ -124,7 +121,7 @@ class CreditsState extends MusicBeatState
 			changeItem();
 		}
 
-		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, gameVer +  (Main.watermarks ? " FNF - " + kadeEngineVer + " Kade Engine" : ""), 12);
+		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, gameVer +  (Main.watermarks ?  gameVer + "GameBanana Demo 2" : ""), 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
@@ -206,13 +203,16 @@ class CreditsState extends MusicBeatState
 					fancyOpenURL("https://twitter.com/xdoodlz");
 
 				case 'snak':
-					fancyOpenURL("https://twitter.com/200thSnak");
+					fancyOpenURL("https://twitter.com/TravelerSnak");
 
 				case 'fruitsy':
 					fancyOpenURL("https://twitter.com/FruitsyOG");
 
 				case 'soulegal':
 					fancyOpenURL("https://twitter.com/nickstwt");
+
+				case 'aizakku':
+					fancyOpenURL("https://twitter.com/ItsAizakku");
 				
 				case 'juno':
 					fancyOpenURL("https://twitter.com/JunoSongsYT");

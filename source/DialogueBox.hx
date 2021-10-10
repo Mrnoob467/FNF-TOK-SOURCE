@@ -23,6 +23,7 @@ class DialogueBox extends FlxSpriteGroup
 
 	var curCharacter:String = '';
 	var curAnim:String = '';
+	var canpress:Bool = true;
 
 	var dialogue:Alphabet;
 	var dialogueList:Array<String> = [];
@@ -408,7 +409,7 @@ class DialogueBox extends FlxSpriteGroup
 
 		}
 
-		if (FlxG.keys.justPressed.ANY  && dialogueStarted == true)
+		if (FlxG.keys.justPressed.ANY  && dialogueStarted == true && canpress == true)
 		{
 			remove(dialogue);
 				
@@ -506,12 +507,11 @@ class DialogueBox extends FlxSpriteGroup
 
 	function endDialogue()
 	{
-		if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'thorns' || PlayState.SONG.song.toLowerCase() == 'picnicroad')
-						FlxG.sound.music.fadeOut(2.2, 0);
-
 				if (this.sound != null) this.sound.stop();
 
 				FlxG.sound.music.fadeOut(2, 0);
+
+				canpress = false;
 
 					switch (PlayState.SONG.song.toLowerCase())
 				{
@@ -565,6 +565,10 @@ class DialogueBox extends FlxSpriteGroup
 
 					if (PlayState.continuetext == true)
 					{
+
+						PlayState.continuetext = false;
+
+						FlxG.sound.play(Paths.sound('tbc'));
 						switch(PlayState.PlayState.SONG.song.toLowerCase())
 						{
 							case 'missilemaestro':
@@ -590,9 +594,9 @@ class DialogueBox extends FlxSpriteGroup
 					tbctxt.screenCenter();
 					tbctxt.alpha = 0;
 					add(tbctxt);
-					FlxTween.tween(tbctxt, {alpha: 1}, 6, {ease: FlxEase.circOut});
+					FlxTween.tween(tbctxt, {alpha: 1}, 10, {ease: FlxEase.circOut});
 
-					new FlxTimer().start(4, function(tmr:FlxTimer)
+					new FlxTimer().start(10, function(tmr:FlxTimer)
 					{
 						FlxTween.tween(tbctxt, {alpha: 0}, 4, {
 				onComplete: function(twn:FlxTween)
@@ -616,6 +620,8 @@ class DialogueBox extends FlxSpriteGroup
 	}
 
 	var zoosh = false;
+	var whitehere = false;
+	var white:FlxSprite;
 
 	function startDialogue():Void
 	{
@@ -634,12 +640,36 @@ class DialogueBox extends FlxSpriteGroup
 		{
 			case "bg":
 				skipDialogue = true;
+
+				if (whitehere == true)
+				{
+				whitehere = false;
+				FlxTween.tween(white, {alpha: 0}, 1, {
+				onComplete: function(twn:FlxTween)
+				{
+					remove(white);
+				}
+				});	
+				}
 				switch(curAnim){
 					case "hide":
 						cutsceneImage.visible = false;
 						cutsceneImage.alpha = 0;
+					case "white":
+					white = new FlxSprite(0, 0).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.WHITE);
+					white.scrollFactor.set();
+					white.alpha = 0;
+					remove(box);
+				remove(swagDialogue);
+				remove(dropText);
+					add(white);	
+					add(box);
+					add(dropText);
+				add(swagDialogue);
+					whitehere = true;
+					FlxTween.tween(white, {alpha: 1}, 1);
 					case "flash":
-						var white:FlxSprite = new FlxSprite(0, 0).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.WHITE);
+						white = new FlxSprite(0, 0).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.WHITE);
 					white.scrollFactor.set();
 					add(white);	
 					FlxTween.tween(white, {alpha: 0}, 0.5, {
@@ -691,7 +721,7 @@ class DialogueBox extends FlxSpriteGroup
 				skipDialogue = true;
 				switch(curAnim){
 					case "stop":
-						FlxG.sound.music.stop();
+						FlxG.sound.music.volume = 0;
 					case "fadeIn":
 						FlxG.sound.music.fadeIn(1, 0, 0.8);
 					default:
@@ -869,6 +899,7 @@ class DialogueBox extends FlxSpriteGroup
 				icons = new HealthIcon('toad', false);
 				changeposition();
 				add(icons);
+				changeSound('toadtext',0.6);
 
 			case "picnic":
 			if (animatedCutscene == true)
@@ -887,6 +918,7 @@ class DialogueBox extends FlxSpriteGroup
 				add(icons);	
 				add(dropText);
 				add(swagDialogue);
+				changeSound('FoldedText',0.6);
 			}); 
 			}
 			else
@@ -895,6 +927,7 @@ class DialogueBox extends FlxSpriteGroup
 				icons = new HealthIcon('picnic', false);
 				changeposition();
 				add(icons);
+				changeSound('FoldedText',0.6);
 			}
 
 			case "colors":
@@ -914,6 +947,7 @@ class DialogueBox extends FlxSpriteGroup
 				add(icons);	
 				add(dropText);
 				add(swagDialogue);
+				changeSound('colorsText',0.6);
 			}); 
 			}
 			else
@@ -922,6 +956,7 @@ class DialogueBox extends FlxSpriteGroup
 				icons = new HealthIcon('colors', false);
 				changeposition();
 				add(icons);
+				changeSound('colorsText',0.6);
 			}
 
 			case "narrator":
@@ -934,30 +969,35 @@ class DialogueBox extends FlxSpriteGroup
 				icons = new HealthIcon('yellowtoad', false);
 				changeposition();
 				add(icons);
+				changeSound('toadtext',0.6);
 
 			case "prof":
 			remove(icons);
 				icons = new HealthIcon('prof', false);
 				changeposition();
 				add(icons);
+				changeSound('toadtext',0.6);
 
 			case "dj":
 			remove(icons);
 				icons = new HealthIcon('dj', false);
 				changeposition();
 				add(icons);
+				changeSound('toadtext',0.6);
 			
 			case "olivia":
 				remove(icons);
 				icons = new HealthIcon('olivia', false);
 				changeposition();
 				add(icons);
+				changeSound('oliviatext',0.6);
 
 			case "autumn":
 			remove(icons);
 				icons = new HealthIcon('autumn', false);
 				changeposition();
 				add(icons);
+				changeSound('FoldedText',0.6);
 
 			case "gondol":
 
@@ -965,15 +1005,40 @@ class DialogueBox extends FlxSpriteGroup
 				icons = new HealthIcon('gondol', false);
 				changeposition();
 				add(icons);
+				changeSound('toadtext',0.6);
 
 			case "rubber":
+			switch (curAnim)
+			{
+				case "blackened":
+				remove(icons);
+				icons = new HealthIcon('rubber', false);
+				icons.color = 0x000000;
+				changeposition();
+				add(icons);
+				changeSound('rubberText',0.6);
+
+				default:
 				remove(icons);
 				icons = new HealthIcon('rubber', false);
 				changeposition();
 				add(icons);
+				changeSound('rubberText',0.6);
+			}
 
 			case "devil":
-			if (animatedCutscene == true)
+			switch (curAnim)
+			{
+				case "blackened":
+				remove(icons);
+				icons = new HealthIcon('devil', false);
+				icons.color = 0x000000;
+				changeposition();
+				add(icons);
+				changeSound('devilText',0.6);
+
+				default:
+				if (animatedCutscene == true)
 			{
 				animatedCutscene = false;
 				remove(icons);
@@ -989,6 +1054,7 @@ class DialogueBox extends FlxSpriteGroup
 				add(icons);	
 				add(dropText);
 				add(swagDialogue);
+				changeSound('devilText',0.6);
 			}); 
 			}
 			else
@@ -997,6 +1063,8 @@ class DialogueBox extends FlxSpriteGroup
 				icons = new HealthIcon('devil', false);
 				changeposition();
 				add(icons);
+				changeSound('devilText',0.6);
+			}
 			}
 		}
 

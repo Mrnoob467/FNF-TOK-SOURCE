@@ -1,0 +1,84 @@
+:music:3-2:
+:music:fadeIn:
+:bg:thrillsatnight1:
+:narrator:default:Tras el dueto, Boyfriend le explica su situación a Olivia.
+:olivia:default:¿Hm? ¿Crees que Mario puede desdoblar a tu novia? Espera un momento primero, déjame comprobar una cosita...
+:fade:thrillsatnight1:
+:bg:thrillsatnight2:
+:sound:sandrun:
+:olivia:default:Como pensaba, está grapada, lo que significa que el martillo de Mario no puede revertirla. Posiblemente se quede así para siempre.
+:bf:default:¿¡B-B-B-Beeep!? 
+:bg:thrillsatnight3:
+:sound:fallover:
+:bg:tear:
+:narrator:default:Esta noticia dejó devastado al niño de pelo azul, que no pudo sino tirarse al suelo y llorar.
+:olivia:default:¡Ay mi madre! O-oye chico, hey... ¡Porfa no llores!
+:music:3-3:
+:music:fadeIn:
+:bg:thrillsatnight4:
+:bg:flash:
+:sound:hug:
+:olivia:default:¡Se me ocurre algo!
+:olivia:default:¿Por qué no te unes al equipo de Mario? Nosotros también queremos que mi hermano revierta todo lo que ha hecho a la normalidad.
+:bf:default:...
+:bf:default:Beep?
+:olivia:default:¡Sí! ¡Seguramente por el camino encontremos una forma de ayudar a tu novia! Seguro que a Mario no le importa que os unáis, ¿Verdad?
+:prof:default:No veo por qué no. Supongo que ayuda extra siempre es bienvenida.
+:olivia:default:¡Exacto!
+:prof:default:En fin, el templo está justo enfrente de nosotros. Tenemos una serpentina que destruir.
+:fade:thrillsatnight4:
+:bg:thrillsatnight5:
+:prof:default:¡Adelante!
+:olivia:default:¡Vamos a por la serpentina!
+:bf:default:¡Beep! 
+:music:3-4:
+:music:fadeIn:
+:fade:thrillsatnight5:
+:bg:thrillsatnight6:
+:sound:sandrun:
+:prof:default:Caramba, es fascinante... Fijáos en cómo está construido, debe de tener miles de años.
+:prof:default:Y estos murales de la pared deben de ser de algún pueblo antiguo… ¡Tengo que anotar esto inmediatamente!
+:olivia:default:Eso está guay y tal, pero aún me pregunto qué quién está guardando la serpentina amarilla y qué relación tiene con mi hermano.
+:prof:default:Oh… Cierto, supongo que salvar al mundo es más importante.
+:fade:thrillsatnight6:
+:bg:thrillsatnight7:
+:music:3-5:
+:music:fadeIn:
+:narrator:default:Eventualmente, el grupo llega a lo que parece ser una sala de discoteca gigante.
+:prof:default:¿El pueblo antiguo era fan de la música disco?
+:narrator:default:Antes de más preguntas, un sonido muy violento se pudo escuchar desde detrás de la puerta en el piso de arriba.
+:bg:tear:
+:bg:flash:
+:sound:screenshake:
+:devil:blackened:¡No no no! ¿¡En serio te crees que eso es buena música!? ¡Pensaba que Olly me traería secuaces con un gusto decente en música!
+:olivia:default:Ni idea de si al pueblo antiguo le gustaba la música disco, pero quien esté detrás de esa voz, seguro que sí.
+:olivia:default:Espera, seguro que quien esté detrás de esa puerta es uno de los aliados de mi hermano. Eso significa que la serpentina está ahí dentro.
+:bg:tear:
+:bg:flash:
+:sound:screenshake:
+:devil:blackened:Ni soñéis con que voy a bajar a ese muermo de fiesta. ¡Una discoteca siempre está a reventar de gente!
+:bg:tear:
+:bg:flash:
+:sound:screenshake:
+:devil:blackened:¡Y por favor, que cualquiera de vosotros quite ese bodrio de música cuanto antes!
+:fade:thrillsatnight7:
+:bg:thrillsatnight8:
+:narrator:default:El grupo decide separarse. Boyfriend se queda a ayudar al DJ a elegir una canción y Mario se va a buscar voluntarios para la pista de baile.
+:bf:default:Beep Boop bada boo.
+:dj:default:Lo siento tío… No- no te entiendo...
+:narrator:default:Mario y el Profesor Toad encontraron un montón de toads que parecían reaccionar a la música disco.
+:prof:default:Mario, esto me da mala espina...
+:bg:thrillsatnight9:
+:sound:fallover:
+:bg:tear:
+:music:3-6:
+:music:fadeIn:
+:narrator:default:Cuando Mario volvió a la sala con la multitud de toads, todos empezaron a bailar al ritmo de la canción que Bf había escogido.
+:bg:tear:
+:bg:flash:
+:bf:default:¡¡Beep!! 
+:olivia:default:¿¡Qué hacen!?
+:dj:default:Parece que ese que destaca le está retando a… ¿Cantar?
+:olivia:default:¿¡Por qué narices quieren que haga eso!?
+:prof:default:No tengo ni idea pero tenemos que mantenerlos entretenidos aquí hasta que quien está protegiendo la serpentina salga de ahí.
+:olivia:default:Eso es cierto, ¡Bf ten cuidado!

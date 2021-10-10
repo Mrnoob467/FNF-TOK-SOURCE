@@ -38,7 +38,7 @@ class WarningSubState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
-		if (controls.BACK)
+		if (FlxG.keys.justPressed.ANY)
 		{
 			leftState = true;
 			FlxG.switchState(new MainMenuState());

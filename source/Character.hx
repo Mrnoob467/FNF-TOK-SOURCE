@@ -165,10 +165,10 @@ class Character extends FlxSprite
 				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24);
 
 				addOffset('idle');
-				addOffset("singUP", -6, 50);
-				addOffset("singRIGHT", 0, 27);
-				addOffset("singLEFT", -10, 10);
-				addOffset("singDOWN", 0, -30);
+				addOffset("singUP", -6, 34);
+				addOffset("singRIGHT", 99, -50);
+				addOffset("singLEFT", 157, 124);
+				addOffset("singDOWN", 0, -74);
 
 				playAnim('idle');
 
@@ -669,20 +669,24 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 			case 'devil':
-				tex = Paths.getSparrowAtlas('characters/devil');
+				tex = Paths.getSparrowAtlas('characters/devil3d');
 				frames = tex;
-				setGraphicSize(Std.int(width * 1.2));
-				animation.addByPrefix('idle', 'Idle', 24, false);
+				//setGraphicSize(Std.int(width * 1));
+				animation.addByIndices('danceLeft', 'Idle', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "", 24, false);
+				animation.addByIndices('danceRight', 'Idle', [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31], "", 24, false);
+
+				addOffset('danceLeft');
+				addOffset('danceRight');
 				animation.addByPrefix('singUP', 'Sing Up', 24, false);
 				animation.addByPrefix('singDOWN', 'Sing Down', 24, false);
 				animation.addByPrefix('singLEFT', 'Sing Left', 24, false);
 				animation.addByPrefix('singRIGHT', 'Sing Right', 24, false);
 
 				addOffset('idle');
-				addOffset("singUP", -52, 3);
-				addOffset("singRIGHT", -48, -6);
-				addOffset("singLEFT", -72, -50);
-				addOffset("singDOWN", -42, -94);
+				addOffset("singUP", 11, 195);
+				addOffset("singRIGHT", -55, -45);
+				addOffset("singLEFT", 216, 100);
+				addOffset("singDOWN", 0, -96);
 
 				playAnim('idle');
 
@@ -873,7 +877,7 @@ class Character extends FlxSprite
 							playAnim('danceLeft');
 					}
 
-				case 'spooky':
+				case 'devil':
 					danced = !danced;
 
 					if (danced)

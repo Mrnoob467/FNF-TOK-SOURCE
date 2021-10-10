@@ -9,4 +9,3 @@
 :narrator:default:El espíritu colorido se desvaneció con un brillo cegador…
 :bg:missile5:
 :narrator:default:Todavía en shock, Bf no pierde más tiempo y se sube al teleférico con Gf para proceder con su viaje al Monte del Otoño.
-:sound:tbc:

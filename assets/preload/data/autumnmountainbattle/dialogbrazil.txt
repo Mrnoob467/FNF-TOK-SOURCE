@@ -1,0 +1,12 @@
+:bg:autumn1:
+:music:2-1:
+:music:fadeIn:
+:narrator:default:Boyfriend e Girlfriend se aproximam da Montanha do Outono, se deparando com uma bela vista.
+:narrator:default:Eles olham por todo lugar para ver se conseguem achar o herói de vermelho.
+:fade:autumn1:
+:bg:autumn2:
+:narrator:default:Porém a calma e mística ilusão foi despedaçada assim que mais minions dobrados aparecem.
+:narrator:default:Boyfriend não se incomoda tanto, levando em consideração a última batalha.
+:autumn:default:Ei, você aí! Para onde você pensa que está indo?
+:bf:default:*Suspiro… Beeep~...
+:autumn:default:Aqui é aonde a sua jornada realmente acaba! Se prepare para encarar a nossa fúria!

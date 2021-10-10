@@ -81,6 +81,30 @@ class KadeEngineData
 		if (FlxG.save.data.customStrumLine == null)
 			FlxG.save.data.customStrumLine = 0;
 
+		if (FlxG.save.data.beatchapter1 == null)
+			FlxG.save.data.beatchapter1 = false;
+
+		if (FlxG.save.data.beatchapter2 == null)
+			FlxG.save.data.beatchapter2 = false;
+
+		if (FlxG.save.data.beatchapter3 == null)
+			FlxG.save.data.beatchapter3 = false;
+
+		if (FlxG.save.data.english == null)
+			FlxG.save.data.english = true;
+
+		if (FlxG.save.data.spanish == null)
+			FlxG.save.data.spanish = false;
+
+		if (FlxG.save.data.portu == null)
+			FlxG.save.data.portu = false;
+
+		if (FlxG.save.data.yape == null)
+			FlxG.save.data.yape = false;
+
+		if (FlxG.save.data.healthbar == null)
+			FlxG.save.data.healthbar = false;
+
 		Conductor.recalculateTimings();
 		PlayerSettings.player1.controls.loadKeyBinds();
 		KeyBinds.keyCheck();

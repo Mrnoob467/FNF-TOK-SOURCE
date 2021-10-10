@@ -1,0 +1,15 @@
+:music:3-6:
+:music:fadeIn:
+:sound:explosion:
+:bg:tear:
+:bg:discodevil3:
+:narrator:default:Con otro miembro del Ejército de Papelería derrotado, las caras de todos volvieron a donde deberían estar.
+:yellowtoad:default:¡Por fin, puedo hablar otra vez!
+:yellowtoad:default:¡Increíble!
+:yellowtoad:default:¡Muchísimas gracias!
+:dj:default:¡Buen trabajo tío, nos has liberado!.
+:olivia:default:¡Ha sido la bomba! ¡Eres un hacha, Bf!
+:prof:default:¡Realmente fenomenal, chico! ¡Ahora podemos ir a por la serpentina y largarnos de aquí!
+:olivia:default:¡Vamos!
+:bf:default:¡Beep!
+:gf:default:.........

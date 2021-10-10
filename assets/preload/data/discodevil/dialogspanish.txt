@@ -1,20 +1,16 @@
-:bg:redstreamer1:
-:music:1-2:
+:music:3-6:
 :music:fadeIn:
-:toad:default:¡No está mal, eres bastante bueno!
-:toad:default:Oye, no he podido evitar fijarme en que tu amiga ha sido doblada… Conozco a alguien que podría ayudarla…
-:bf:default:¿Bo?
-:toad:default:¡Nuestro héroe local, Mario! ¡Es tu apuesta más segura si necesitas ayuda con temas de origami!
-:bf:default:Bap boop.
-:toad:default:Después de desdoblarme se fue en dirección a la Torre Bellavista, así que probablemente tomó el teleférico.
-:fade:redstreamer1:
-:bg:redstreamer2:
-:bf:default:Beep ba!
-:toad:default:¡Adiooos! ¡Espero que encontréis a Mario sin problemas!
-:bg:hide:
-:cutscenesix:
-:music:1-3:
+:bg:discodevil1:
+:bf:default:~¡Yea!
+:dj:default:Eso sí que ha sido una pasada.
+:olivia:default:¡Eres increíble cantando Bf!
+:cutscenesixteen:
+:sound:floorbreak:
+:music:1-4:
 :music:fadeIn:
-:bf:default:Bap!
-:picnic:default:¡Alto ahí!
-:picnic:default:¡Parece que nos dejamos uno! Esta vez nos aseguraremos de doblarte bien, ahora que tu “héroe” no está cerca…
+:devil:default:¡Ahora sí que parece una discoteca! ¡No lo haces nada mal con la música, chico!
+:bf:default:BEe-
+:devil:default:Pero me temo que nuestras similitudes terminan ahí, vas detrás de la serpentina ¿verdad?
+:bf:default:Bap >:(
+:devil:default:¡Es una pena, pero parece que también sucumbirás el mismo destino que esos toads!
+:devil:default:¡Hora del show!

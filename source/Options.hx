@@ -96,6 +96,34 @@ class DFJKOption extends Option
 	}
 }
 
+class LanguageOption extends Option
+{
+	public override function press():Bool
+	{
+		OptionsMenu.instance.openSubState(new LanguageMenu());
+		return false;
+	}
+
+	private override function updateDisplay():String
+	{
+		return "Language Options";
+	}
+}
+
+class ClearOption extends Option
+{
+	public override function press():Bool
+	{
+		OptionsMenu.instance.openSubState(new ClearSaveData());
+		return false;
+	}
+
+	private override function updateDisplay():String
+	{
+		return "Clear Save Data";
+	}
+}
+
 class CpuStrums extends Option
 {
 	public function new(desc:String)
@@ -564,69 +592,6 @@ class WatermarkOption extends Option
 	private override function updateDisplay():String
 	{
 		return "Watermarks " + (Main.watermarks ? "on" : "off");
-	}
-}
-
-/*class Copyright extends Option
-{
-	public function new(desc:String)
-	{
-		super();
-		description = desc;
-	}
-	
-	public override function press():Bool
-	{
-		FlxG.save.data.copyrightfree = !FlxG.save.data.copyrightfree;
-		trace('Copyright : ' + FlxG.save.data.copyrightfree);
-		display = updateDisplay();
-		return true;
-		FlxG.save.data.copyrightfree = false;
-	}
-	
-	private override function updateDisplay():String
-		return "Copyright Free " + (FlxG.save.data.copyrightfree ? "off" : "on");
-}*/
-
-class EnglishOption extends Option
-{
-	public function new(desc:String)
-	{
-		super();
-		description = desc;
-	}
-
-	public override function press():Bool
-	{
-		FlxG.save.data.english = !FlxG.save.data.english;
-		display = updateDisplay();
-		return true;
-	}
-
-	private override function updateDisplay():String
-	{
-		return "English " + (FlxG.save.data.english ? "Off" : "On");
-	}
-}
-
-class LanguageOption extends Option
-{
-	public function new(desc:String)
-	{
-		super();
-		description = desc;
-	}
-
-	public override function press():Bool
-	{
-		FlxG.save.data.language = !FlxG.save.data.language;
-		display = updateDisplay();
-		return true;
-	}
-
-	private override function updateDisplay():String
-	{
-		return "Other Languages " + (FlxG.save.data.language ? "Español" : "Português");
 	}
 }
 

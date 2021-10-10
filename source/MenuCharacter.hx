@@ -37,7 +37,7 @@ class MenuCharacter extends FlxSprite
 
 		antialiasing = true;
 
-		frames = Paths.getSparrowAtlas('campaign_menu_UI_characters');
+		frames = Paths.getSparrowAtlas('campaign_menu_UI_characters', 'other');
 
 		animation.addByPrefix('bf', "BF idle dance white", 24);
 		animation.addByPrefix('bfConfirm', 'BF HEY!!', 24, false);

@@ -1,0 +1,35 @@
+:music:2-2:
+:music:fadeIn:
+:bg:yellow1:
+:gondol:default:Beleza! Aqui é a sua parada.
+:bf:default:Beep Bo!
+:gondol:default:Tchau tchau! Vocês dois tentem não se meter em confusão.
+:fade:yellow1:
+:bg:yellow2:
+:music:3-1:
+:music:fadeIn:
+:narrator:default:Eles se aproximam a entrada da Caverna Monty Mole, levando ao Deserto de Lixa Escaldante...
+:narrator:default:Um pequeno sentimento que um amigo não está mais conosco bate no Boyfriend enquanto ele olha a enorme cratera...
+:narrator:default:...Ainda sim, eles prosseguem em frente.
+:music:3-2:
+:music:fadeIn:
+:fade:yellow2:
+:bg:yellow3:
+:narrator:default:Eles pegam um Carro Bota e dirigem a direção da fita Amarela.
+:narrator:default:Ela ainda estava intacta e presa em algum tipo de templo ancestral.
+:fade:yellow3:
+:bg:yellow4:
+:narrator:default:Mas logo eles pararam, já que havia um origami bloqueando o caminho.
+:olivia:default:Oh?
+:fade:yellow4:
+:bg:yellow5:
+:olivia:default:Olá viajante! Meu nome é Olivia!
+:bf:default:Beep...
+:olivia:default:Ah, não, eu não sou um soldado amassado. Na verdade eu estive seguindo o Mario já faz um tempinho.
+:bf:default: Bap Breep?!
+:olivia:default:Mas é claro! Ele está em uma batalha agora então eu só estou esperando por ele e professor voltarem...
+:olivia:default:Ah- Espera!
+:olivia:default:Você gosta de cantar?
+:bf:default:Beep Boo
+:olivia:default:Yay~ Eu estive pensando que nós podiamos cantar uma musiquinha enquanto esperamos, você quer tentar?
+:bf:default:Bop!

@@ -40,6 +40,7 @@ class OptionsMenu extends MusicBeatState
 		]),
 		new OptionCategory("Appearance", [
 			#if desktop
+			new LanguageOption(),
 			new DistractionsAndEffectsOption("Toggle stage distractions that can hinder your gameplay."),
 			new RainbowFPSOption("Make the FPS Counter Rainbow"),
 			new AccuracyOption("Display accuracy information."),
@@ -55,17 +56,17 @@ class OptionsMenu extends MusicBeatState
 			#if desktop
 			new FPSOption("Toggle the FPS Counter"),
 			new ReplayOption("View replays"),
+			new ClearOption(),
 			#end
 			new FlashingLightsOption("Toggle flashing lights that can cause epileptic seizures and strain."),
 			new WatermarkOption("Enable and disable all watermarks from the engine."),
-			//new Copyright("Redone instrumentals to avoid Nintendo's copyright!"),
 			new BotPlay("Showcase your charts and mods with autoplay.")
 		]),
 
-		new OptionCategory("Language", [
+		/*new OptionCategory("Language", [
 			new EnglishOption(""),
 			new LanguageOption("")
-		])
+		])*/
 		
 	];
 
@@ -80,12 +81,12 @@ class OptionsMenu extends MusicBeatState
 	override function create()
 	{
 		instance = this;
-		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image("menuBG"));
+		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image("menuBG", 'other'));
 
 		menuBG.updateHitbox();
 		menuBG.screenCenter();
 		menuBG.antialiasing = true;
-		menuBG.setGraphicSize(Std.int(menuBG.width * 0.6));
+		menuBG.setGraphicSize(Std.int(menuBG.width * 0.7));
 		add(menuBG);
 
 		grpControls = new FlxTypedGroup<Alphabet>();

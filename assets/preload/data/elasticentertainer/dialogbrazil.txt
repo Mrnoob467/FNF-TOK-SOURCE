@@ -1,0 +1,45 @@
+:music:2-2:
+:music:fadeIn:
+:bg:elastic1:
+:gondol:default:Bom trabalho parceiro! Nunca tive alguém com pulmões como os seus por um bom tempo.
+:bf:default:(Feliz) Beep~
+:gondol:default:Certo, estamos nos aproximando do lugar aonde eu deixei o Mario, ele saiu para a próxima ru-
+:music:stop:
+:rubber:blackened:MARIO!?
+:sound:rubberypunch:
+:sound:boatcrack:
+:bg:elastic2:
+:bg:flash:
+:bg:tear:
+:sound:waterpour:
+:music:1-4:
+:music:fadeIn:
+:narrator:default:De repente, um monstro de elástico vira o barco e apanha a Girlfriend, mandando Boyfriend e o Toad do riacho à beira.
+:bf:default:BAH!?
+:sound:fallover:
+:bg:elastic3:
+:bg:tear:
+:bf:default:Bo-!
+:rubber:default:Quer dizer que aquele minorca que tinha a AUDÁCIA de me empurrar do MEU palco na MINHA grande estréia?! Ele nem se certificou de que eu fui embora!
+:rubber:default:Precisarei de uma nova audiência para o meu segundo show, e vocês três farão bons rostos na plateia!
+:fade:elastic3:
+:bg:elastic4:
+:bf:default:Beep-
+:rubber:default:Agora venha cá seu pequeno…
+:fade:elastic4:
+:bg:elastic5:
+:narrator:default:Ver o microfone de Boyfriend despertou algo no comediante perturbado
+:rubber:default:Ooh... mais um cantor, certo? Gostaria de cantar e dançar um pouco?
+:bf:default:(beep furioso)
+:rubber:default:Sabe o que funciona perfeitamente com isso?
+:bg:hide:
+:sound:breaker:
+:bg:elastic6:
+:rubber:default:DRAMA E AÇÃO! 
+:rubber:default:Me permita que eu invente a história… Eu, o monstro, sequestrei a você e a sua amada, e agora você é forçado a cantar pela liberdade dos dois.
+:rubber:default:Ah mas tem um porém~ VOCÊ NÃO SAIRÁ VIVO!!
+:bf:default:BEEP?!
+:rubber:default:Ohoho~ Minhas habilidades de roteirista são impecáveis!
+:rubber:default:Vamos ver o que você tem, garoto amante!
+
+

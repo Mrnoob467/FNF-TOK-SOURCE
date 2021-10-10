@@ -1,0 +1,11 @@
+:bg:autumn1:
+:music:2-1:
+:music:fadeIn:
+:narrator:default:Boyfriend y Girlfriend acaban de llegar al Monte del Otoño, famosos por sus preciosos paisajes.
+:narrator:default:Mirando a todos lados, no logran encontrar al famoso fontanero.
+:fade:autumn1:
+:bg:autumn2:
+:narrator:default:Sin embargo, la calma que aquel lugar posee no tardó mucho en ser interrumpida por más enemigos doblados en el camino.
+:autumn:default:¡Hey tú! ¿Dónde te crees que vas?
+:bf:default:*Suspiro… Beeep~...
+:autumn:default:¡Tu viaje termina aquí, rebelde! ¡Prepárate para sucumbir ante las fuerzas del Rey Olly de una vez por todas! 

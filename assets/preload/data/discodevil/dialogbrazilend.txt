@@ -1,0 +1,15 @@
+:music:3-6:
+:music:fadeIn:
+:sound:explosion:
+:bg:tear:
+:bg:discodevil3:
+:narrator:default:Com o demônio derrotado o rosto de todos voaram pra onde eles pertencem
+:yellowtoad:default:Yaay eu posso falar de novo!
+:yellowtoad:default:Yipee!
+:yellowtoad:default:Haha, muito obrigado!
+:dj:default:Bom trabalho moleque, eu não sabia que você era bom assim.
+:olivia:default:Aquilo foi incrível! Bom trabalho azulzinho!
+:prof:default:Aquilo foi fenomenal, garoto! Agora vamos pegar aquela fita e sair daqui!
+:olivia:default:Vamos lá!
+:bf:default:Beep!
+:gf:default:.........

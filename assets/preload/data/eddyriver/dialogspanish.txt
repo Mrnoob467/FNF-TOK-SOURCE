@@ -1,0 +1,24 @@
+:music:2-1:
+:music:fadeIn:
+:bg:eddy1:
+:gondol:default:¡Hey! ¡Chico!
+:bf:default:Bop?
+:gondol:default:¡Sí, tú! Te he visto ahí atrás dándoles su merecido a esos idiotas doblados. ¡Eres muy bueno en lo que haces!
+:fade:eddy1:
+:bg:eddy2:
+:bf:default:Bap beep skdep boop.
+:gondol:default:¿Qué? ¿Mario? Sí, claro que lo conozco.
+:gondol:default:Él me rescató de mi forma doblada, así que le hice el favor de llevarle a través del río al Desierto de Papel de Lija.
+:bf:default:Beep! Skedop bop boop!
+:gondol:default:¡Por supuesto! Súbete y os llevaré a tí y a tu amiga al mismo lugar
+:music:2-river:
+:music:fadeIn:
+:fade:eddy2:
+:bg:eddy3:
+:narrator:default:A medio camino del río, el toad rompió el silencio...
+:gondol:default:Hey chico.
+:bf:default:?
+:gondol:default:¿Te gustaría poner a prueba tu talento con el micrófono de nuevo? Hacer todos los días la misma ruta se vuelve muy tedioso.
+:bf:default:Boop beep!
+:gondol:default:¡Genial! ¡Cantar en los rápidos tiene que ser muy interesante!
+:gondol:default:Ten cuidado con los troncos y las piedras que hay en el agua. ¡Un choque podría ser mortal!

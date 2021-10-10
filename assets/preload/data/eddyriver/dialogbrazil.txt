@@ -1,0 +1,27 @@
+:music:2-1:
+:music:fadeIn:
+:bg:eddy1:
+:gondol:default:Ei você, garoto!
+:bf:default:Bop?
+:gondol:default:Sim você mesmo! Eu te vi ali atrás dando uma lição naqueles bobões dobrados e desagradáveis, isso é uma boa conquista!
+:fade:eddy1:
+:bg:eddy2:
+:bf:default:Bap beep skdep boop.
+:gondol:default:Hm? O Mario, você me diz? É claro que eu o conheço!
+:gondol:default:Ele me desdobrou então eu o dei uma carona pelo riacho até o Deserto de Lixa Escaldante.
+:bf:default:Beep! Skedop bop boop!
+:gondol:default:Mas é claro! Entra aí que eu darei uma carona para você e sua amiga!
+:music:2-river:
+:music:fadeIn:
+:fade:eddy2:
+:bg:eddy3:
+:narrator:default:Enquanto atravessavam pelo rio o Toad quebrou o silêncio...
+:gondol:default:Ei garoto.
+:bf:default:?
+:gondol:default:Você se importaria de fazer algo por mim enquanto chegamos lá?
+:bf:default:Beep?
+:gondol:default:Você poderia usar suas cordas vocais mais uma vez? Fazer a mesma rota todo dia começa a ficar entediante.
+:bf:default:Boop beep!
+:gondol:default:Excellent! Cantar pelas cachoeiras será mais interessante! 
+:gondol:default:Tome cuidado com os troncos e rochas! Colidir com eles pode ser fatal.
+

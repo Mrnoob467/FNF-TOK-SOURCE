@@ -1,0 +1,24 @@
+:music:1-4:
+:music:fadeIn:
+:bg:elastic7:
+:rubber:default:COMO!? ISSO NÃO ESTAVA NO ROTEIRO SEU VERME!
+:rubber:default:ERA PARA VOCÊ TER PERDIDO! VOCÊ NÃO ESTAVA ME OUVINDO!?
+:narrator:default:Ele parece estar mais furioso do que antes.
+:music:stop:
+:bg:elastic8:
+:bg:tear:
+:narrator:default:E por conta de raiva pura e não filtrada, as mãos de borracha do ator começaram a se rasgar!
+:rubber:default:GAH! Eu acho que esse foi o meu último espetáculo…
+:rubber:default:Bom... Até mais, seu rato sujismundo! 
+:sound:explosion:
+:bg:elastic9:
+:bg:tear:
+:narrator:default:O inimigo então cai, fazendo com que Girlfriend caia nos braços de Boyfriend.
+:fade:elastic9:
+:bg:elastic10:
+:music:2-2:
+:music:fadeIn:
+:gondol:default:Uau, mas que performance! Enfim, não estavamos no nosso caminho para o deserto? Ou você quer ficar pela Shogun Studios por mais um tempo?
+:bf:default:Bep...
+:gondol:default:Ah sim, Mario… heh.
+:gondol:default:Bom, então suba novamente!

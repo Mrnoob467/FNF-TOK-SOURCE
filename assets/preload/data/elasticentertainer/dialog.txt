@@ -6,7 +6,7 @@
 :gondol:default:Alright we're approaching where I left Mario!
 :gondol:default:He left to go after the next stre-
 :music:stop:
-:narrator:default:???:MARIO!?
+:rubber:blackened:MARIO!?
 :sound:rubberypunch:
 :sound:boatcrack:
 :bg:elastic2:

@@ -1,0 +1,26 @@
+:music:1-4:
+:music:fadeIn:
+:bg:elastic7:
+:rubber:default:¿¡QUÉ CREES QUE ESTÁS HACIENDO!? ¡ESTO NO ESTABA EN EL GUIÓN, NECIO!
+:rubber:default:¡TÚ PIERDES! ¿¡NO ME HAS ESCUCHADO ANTES!?
+:narrator:default:Rápidamente la rabia consumía al monstruo elástico....
+:music:stop:
+:bg:elastic8:
+:bg:tear:
+:narrator:default:...Y de pura rabia acumulada, las gomas elásticas comenzaron a desgarrarse.
+:rubber:default:¡UGH! ¡Supongo que el telón se cierra para mí...!
+:rubber:default:Hasta nunca, rata insufrible…
+:rubber:default:El autoproclamado villano explotó en el acto, mandando a Gf por los aires...
+:sound:explosion:
+:bg:elastic9:
+:bg:tear:
+:narrator:default:...Y aterrizando en los brazos de Boyfriend.
+:fade:elastic9:
+:bg:elastic10:
+:music:2-2:
+:music:fadeIn:
+:gondol:default:¡Wow, menuda actuación! ¡Le has enseñado quién manda, chico! 
+:gondol:default:¿Bueno, queréis quedaros aquí en el parque un rato?
+:bf:default:Bep...
+:gondol:default:Oh, es verdad… Mario.
+:gondol:default:En ese caso, ¡Vamos, subid!

@@ -7,7 +7,7 @@
 :music:stop:
 :bg:elastic8:
 :bg:tear:
-:rubber:default:And out of pure unfiltered rage... the actor began to explode!
+:narrator:default:And out of pure unfiltered rage... the actor's rubber bands began tearing apart!
 :rubber:default:GAH! I guess this was my final curtain call...
 :rubber:default:Well... Farewell, you insufferable rat!
 :sound:explosion:
@@ -22,4 +22,3 @@
 :bf:default:Bep...
 :gondol:default:Oh right, Mario... heh.
 :gondol:default:Well hop back in!
-:sound:tbc:

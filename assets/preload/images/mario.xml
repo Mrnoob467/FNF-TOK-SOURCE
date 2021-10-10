@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="mario.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="mario_peace0000" x="1" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_peace0001" x="1" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_peace0002" x="1" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_peace0003" x="1256" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_peace0004" x="1256" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_peace0005" x="1256" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_peace0006" x="2511" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_peace0007" x="2511" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_peace0008" x="2511" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_peace0009" x="3766" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_peace0010" x="3766" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_peace0011" x="3766" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_run0000" x="5021" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_run0001" x="5021" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_run0002" x="6276" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_run0003" x="6276" y="1" width="1254" height="1213"/>
+	<SubTexture name="mario_run0004" x="1" y="1215" width="1254" height="1213"/>
+	<SubTexture name="mario_run0005" x="1" y="1215" width="1254" height="1213"/>
+	<SubTexture name="mario_run0006" x="1256" y="1215" width="1254" height="1213"/>
+	<SubTexture name="mario_run0007" x="1256" y="1215" width="1254" height="1213"/>
+	<SubTexture name="mario_run0008" x="2511" y="1215" width="1254" height="1213"/>
+	<SubTexture name="mario_run0009" x="2511" y="1215" width="1254" height="1213"/>
+	<SubTexture name="mario_run0010" x="3766" y="1215" width="1254" height="1213"/>
+	<SubTexture name="mario_run0011" x="3766" y="1215" width="1254" height="1213"/>
+</TextureAtlas>

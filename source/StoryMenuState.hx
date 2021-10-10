@@ -39,8 +39,7 @@ class StoryMenuState extends MusicBeatState
 	];
 	var curDifficulty:Int = 1;
 
-	public static var weekUnlocked:Array<Bool> = [true, true, true, false, false];
-	
+	public static var weekUnlocked:Array<Bool> = [];
 
 	var weekCharacters:Array<Dynamic> = [
 		['colors', 'bf', ''],
@@ -71,11 +70,18 @@ class StoryMenuState extends MusicBeatState
 	{
 		#if windows
 		// Updating Discord Rich Presence
-		//DiscordClient.changePresence("In the Story Mode Menu", null);
+		DiscordClient.changePresence("In the Story Mode Menu", null);
 		#end
 
 		transIn = FlxTransitionableState.defaultTransIn;
 		transOut = FlxTransitionableState.defaultTransOut;
+
+		if (FlxG.save.data.beatchapter1 == true && FlxG.save.data.beatchapter2)
+			weekUnlocked = [true, true, true];
+		else if (FlxG.save.data.beatchapter1 == true)
+			weekUnlocked = [true, true, false];
+		else
+			weekUnlocked = [true, false, false];
 
 		if (!FlxG.sound.music.playing)
 		{
@@ -88,9 +94,9 @@ class StoryMenuState extends MusicBeatState
 		scoreText.setFormat("New Super Mario Font U", 30, FlxTextAlign.CENTER);
 		scoreText.screenCenter(X);
 
-		var ui_tex = Paths.getSparrowAtlas('UI_assets');
+		var ui_tex = Paths.getSparrowAtlas('UI_assets', 'other');
 
-		var stagebg:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('stagebackground'));
+		var stagebg:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('stagebackground', 'other'));
 			stagebg.setGraphicSize(Std.int(stagebg.width * 0.55));
 			stagebg.updateHitbox();
 			stagebg.antialiasing = true;
@@ -98,7 +104,7 @@ class StoryMenuState extends MusicBeatState
 			add(stagebg);
 
 		props = new FlxSprite(-60, -20);
-					props.frames = Paths.getSparrowAtlas('stageprops');
+					props.frames = Paths.getSparrowAtlas('stageprops', 'other');
 					props.animation.addByPrefix('propboplol', "propboplol", 24);
 					props.antialiasing = true;
 					props.setGraphicSize(Std.int(props.width * 0.55));
@@ -106,7 +112,7 @@ class StoryMenuState extends MusicBeatState
 					add(props);
 					props.animation.play('propboplol');
 		
-		var campaignstage:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('stagefloor'));
+		var campaignstage:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('stagefloor', 'other'));
 			campaignstage.setGraphicSize(Std.int(campaignstage.width * 0.55));
 			campaignstage.updateHitbox();
 			campaignstage.antialiasing = true;
@@ -114,7 +120,7 @@ class StoryMenuState extends MusicBeatState
 			add(campaignstage);
 
 		streamers = new FlxSprite(0, 0);
-			streamers.frames = Paths.getSparrowAtlas('streamer');
+			streamers.frames = Paths.getSparrowAtlas('streamer', 'other');
 			streamers.animation.addByPrefix('red', "redstreamer", 24);
 			streamers.animation.addByPrefix('blue', "bluestreamer", 24);
 			streamers.animation.addByPrefix('yellow', "yellowstreamer", 24);
@@ -128,7 +134,7 @@ class StoryMenuState extends MusicBeatState
 			streamers.animation.play('red');
 
 		chapterload = new FlxSprite(0, 0);
-			chapterload.frames = Paths.getSparrowAtlas('chapterload');
+			chapterload.frames = Paths.getSparrowAtlas('chapterload', 'other');
 			chapterload.animation.addByPrefix('loadin', "loadin", 13);
 			chapterload.antialiasing = true;
 			chapterload.setGraphicSize(Std.int(chapterload.width * 0.65));
@@ -141,7 +147,7 @@ class StoryMenuState extends MusicBeatState
 		add(grpWeekCharacters);
 
 		gf = new FlxSprite(750, 170);
-			gf.frames = Paths.getSparrowAtlas('gfmenu');
+			gf.frames = Paths.getSparrowAtlas('gfmenu', 'other');
 			gf.animation.addByPrefix('dance', 'GF Dancing Beat', 24);
 			gf.antialiasing = true;
 			gf.setGraphicSize(Std.int(gf.width * 0.45));
@@ -149,14 +155,14 @@ class StoryMenuState extends MusicBeatState
 			gf.animation.play('dance');
 			add(gf);
 
-		var stagecurtains:FlxSprite = new FlxSprite(0, -300).loadGraphic(Paths.image('stagecurtains'));
+		var stagecurtains:FlxSprite = new FlxSprite(0, -300).loadGraphic(Paths.image('stagecurtains', 'other'));
 			stagecurtains.setGraphicSize(Std.int(stagecurtains.width * 0.5));
 			stagecurtains.updateHitbox();
 			stagecurtains.antialiasing = true;
 			stagecurtains.active = false;
 			add(stagecurtains);
 
-		var curtainabove:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('curtainabove'));
+		var curtainabove:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('curtainabove', 'other'));
 			curtainabove.setGraphicSize(Std.int(curtainabove.width * 0.55));
 			curtainabove.updateHitbox();
 			curtainabove.antialiasing = true;
@@ -164,7 +170,7 @@ class StoryMenuState extends MusicBeatState
 			add(curtainabove);
 
 		toads = new FlxSprite(0, 15);
-					toads.frames = Paths.getSparrowAtlas('tods');
+					toads.frames = Paths.getSparrowAtlas('tods', 'other');
 					toads.animation.addByPrefix('todbop', "todbop", 24);
 					toads.antialiasing = true;
 					toads.setGraphicSize(Std.int(toads.width * 0.505));
@@ -172,7 +178,7 @@ class StoryMenuState extends MusicBeatState
 					add(toads);
 					toads.animation.play('todbop');
 
-		var layeringbox:FlxSprite = new FlxSprite(425, -300).loadGraphic(Paths.image('chapterselect'));
+		var layeringbox:FlxSprite = new FlxSprite(425, -300).loadGraphic(Paths.image('chapterselect', 'other'));
 			layeringbox.setGraphicSize(Std.int(layeringbox.width * 0.55));
 			layeringbox.updateHitbox();
 			layeringbox.antialiasing = true;
@@ -199,7 +205,7 @@ class StoryMenuState extends MusicBeatState
 		lock.animation.addByPrefix('lock', "lock");
 		lock.animation.play('lock');
 
-		chapterselectbox = new FlxSprite(425, -300).loadGraphic(Paths.image('chapterselect'));
+		chapterselectbox = new FlxSprite(425, -300).loadGraphic(Paths.image('chapterselect', 'other'));
 			chapterselectbox.setGraphicSize(Std.int(chapterselectbox.width * 0.55));
 			chapterselectbox.updateHitbox();
 			chapterselectbox.antialiasing = true;
@@ -219,21 +225,21 @@ class StoryMenuState extends MusicBeatState
 			chaptertext.updateHitbox();
 			chaptertext.animation.play('chapter1');
 
-		var scorebox:FlxSprite = new FlxSprite(540, 190).loadGraphic(Paths.image('score'));
+		var scorebox:FlxSprite = new FlxSprite(540, 190).loadGraphic(Paths.image('score', 'other'));
 			scorebox.setGraphicSize(Std.int(scorebox.width * 0.5));
 			scorebox.updateHitbox();
 			scorebox.antialiasing = true;
 			scorebox.active = false;
 			add(scorebox);
 
-		var trackbox:FlxSprite = new FlxSprite(43, 535).loadGraphic(Paths.image('track'));
+		var trackbox:FlxSprite = new FlxSprite(43, 535).loadGraphic(Paths.image('track', 'other'));
 			trackbox.setGraphicSize(Std.int(trackbox.width * 0.5));
 			trackbox.updateHitbox();
 			trackbox.antialiasing = true;
 			trackbox.active = true;
 			add(trackbox);
 
-		var tracktext:FlxSprite = new FlxSprite(60, 545).loadGraphic(Paths.image('tracktext'));
+		var tracktext:FlxSprite = new FlxSprite(60, 545).loadGraphic(Paths.image('tracktext', 'other'));
 			tracktext.setGraphicSize(Std.int(trackbox.width * 0.25));
 			tracktext.updateHitbox();
 			tracktext.antialiasing = true;
@@ -337,7 +343,6 @@ class StoryMenuState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
-		var ui_tex = Paths.getSparrowAtlas('UI_assets');
 		lerpScore = Math.floor(FlxMath.lerp(lerpScore, intendedScore, 0.5));
 
 		scoreText.text = "" + lerpScore;

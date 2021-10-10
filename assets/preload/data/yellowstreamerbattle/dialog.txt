@@ -6,6 +6,8 @@
 :gondol:default:Bye bye! You two try to keep out of trouble!
 :fade:yellow1:
 :bg:yellow2:
+:music:3-1:
+:music:fadeIn:
 :narrator:default:They approach the entrance of Monty Mole Cave, leading to Scorching Sandpaper Desert...
 :narrator:default:A small feeling that a friend is no longer with us suddenly hits Boyfriend, as he looks at the massive crater.
 :narrator:default:...Yet, they proceed onwards.

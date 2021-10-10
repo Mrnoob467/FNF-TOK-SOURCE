@@ -39,11 +39,12 @@ class MainMenuState extends MusicBeatState
 	var newGaming:FlxText;
 	var newGaming2:FlxText;
 	public static var firstStart:Bool = true;
+	var canselect:Bool;
 
 	public static var nightly:String = "";
 
 	public static var kadeEngineVer:String = "1.5.2" + nightly;
-	public static var gameVer:String = "0.2.7.1";
+	public static var gameVer:String = "0.5";
 
 	var magenta:FlxSprite;
 	public static var finishedFunnyMove:Bool = false;
@@ -52,7 +53,7 @@ class MainMenuState extends MusicBeatState
 	{
 		#if windows
 		// Updating Discord Rich Presence
-		//DiscordClient.changePresence("In the Menus", null);
+		DiscordClient.changePresence("In the Menus", null);
 		#end
 
 		if (!FlxG.sound.music.playing)
@@ -63,7 +64,7 @@ class MainMenuState extends MusicBeatState
 		persistentUpdate = persistentDraw = true;
 
 		Image = new FlxSprite(-13.5, -10.8);
-		Image.frames = Paths.getSparrowAtlas('fadestuff');
+		Image.frames = Paths.getSparrowAtlas('fadestuff', 'other');
 		Image.setGraphicSize(Std.int(Image.width * 0.38));
 		Image.animation.addByPrefix('story', 'story', 24);
 		Image.animation.addByPrefix('freeplay', 'freeplay', 24);
@@ -76,7 +77,7 @@ class MainMenuState extends MusicBeatState
 
 
 		FadeStuff = new FlxSprite(-13.5, -10.8);
-		FadeStuff.frames = Paths.getSparrowAtlas('fadestuff');
+		FadeStuff.frames = Paths.getSparrowAtlas('fadestuff', 'other');
 		FadeStuff.setGraphicSize(Std.int(Image.width));
 		FadeStuff.animation.addByPrefix('story', 'story', 24);
 		FadeStuff.animation.addByPrefix('freeplay', 'freeplay', 24);
@@ -88,7 +89,7 @@ class MainMenuState extends MusicBeatState
 		FadeStuff.updateHitbox();
 		add(FadeStuff);
 
-		Checkerboard = new FlxSprite(-100).loadGraphic(Paths.image('Pp'));
+		Checkerboard = new FlxSprite(-100).loadGraphic(Paths.image('Pp', 'other'));
 		Checkerboard.setGraphicSize(Std.int(Image.width));
 		Checkerboard.updateHitbox();
 		Checkerboard.screenCenter();
@@ -98,7 +99,7 @@ class MainMenuState extends MusicBeatState
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
 
-		var tex = Paths.getSparrowAtlas('FNF_main_menu_assets');
+		var tex = Paths.getSparrowAtlas('FNF_main_menu_assets', 'other');
 
 		for (i in 0...optionShit.length)
 		{
@@ -126,11 +127,15 @@ class MainMenuState extends MusicBeatState
 			menuItem.scrollFactor.set();
 			menuItem.antialiasing = true;
 			if (firstStart)
+			{
+				canselect = false;
 				FlxTween.tween(menuItem,{x: 70},1 + (i * 0.25) ,{ease: FlxEase.expoInOut, onComplete: function(flxTween:FlxTween) 
 					{ 
 						finishedFunnyMove = true; 
 						changeItem();
 					}});
+				canselect = true;
+			}
 			else
 			{
 				menuItem.y = 30 + (i * 185);
@@ -148,12 +153,13 @@ class MainMenuState extends MusicBeatState
 				case 4:
 				menuItem.y -= 190;
 			}
+				canselect = true;
 			}
 		}
 
 		firstStart = false;
 
-		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, gameVer +  (Main.watermarks ? " - August 5 DEV BUILD " : ""), 12);
+		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, gameVer +  (Main.watermarks ? " - GameBanana Demo 2 " : ""), 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
@@ -265,7 +271,7 @@ class MainMenuState extends MusicBeatState
 				FlxG.switchState(new TitleState());
 			}
 
-			if (controls.ACCEPT)
+			if (controls.ACCEPT && canselect == true)
 			{
 					selectedSomethin = true;
 					FlxG.sound.play(Paths.sound('confirmMenu'));

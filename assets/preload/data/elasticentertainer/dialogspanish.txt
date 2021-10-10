@@ -1,0 +1,46 @@
+:music:2-2:
+:music:fadeIn:
+:bg:elastic1:
+:gondol:default:¡Muy bien hecho, chico! Hacía mucho que no cantaba en compañía.
+:bf:default:(Feliz) Beep~
+:gondol:default:Bien, nos estamos acercando al lugar en el que se bajó Mario, parece que buscaba seguir la serpen-
+:music:stop:
+:rubber:blackened:¿¡MARIO!?
+:sound:rubberypunch:
+:sound:boatcrack:
+:bg:elastic2:
+:bg:flash:
+:bg:tear:
+:sound:waterpour:
+:music:1-4:
+:music:fadeIn:
+:narrator:default:De pronto, un monstruo hecho de gomas elásticas hace volar el bote, Bf y a Toad a la superficie más cercana.
+:bf:default:¿¡BAH!?
+:sound:fallover:
+:bg:elastic3:
+:bg:tear:
+:bf:default:¡Bo-!
+:rubber:default:¿¡Esa rata que se atrevió a lanzarme fuera de MI escenario durante mi debut!? Ni siquiera se aseguró de que no pudiera reconstruirme otra vez...
+:rubber:default:¡Prepárate porque mi segundo show está a punto de empezar, y vosotros 3 seréis un público excelente!
+:fade:elastic3:
+:bg:elastic4:
+:bf:default:Beep-
+:rubber:default:Ven aquí pequeña esco-
+:fade:elastic4:
+:bg:elastic5:
+:narrator:default:En ese momento, el micrófono de Bf despertó algo dentro del monstruo elástico
+:rubber:default:Ooh… Otro artista. Ya veo, ¿te gusta mucho cantar y bailotear no?
+:bf:default:(Enfadado) Beep.
+:rubber:default:¿Quieres saber qué funciona perfecto con la música?
+:bg:hide:
+:sound:breaker:
+:bg:elastic6:
+:rubber:default:¡UNA BUENA HISTORIA DE DRAMA Y ACCIÓN!
+:rubber:default:Yo, el villano te he secuestrado a tí y a tu amada, y estás obligado a cantar por vuestra libertad.
+:rubber:default:Pero aquí viene el giro de guión… ¡Vosotros no ganáis en esta historia!
+:bf:default:BEEP?!
+:rubber:default:Ja… ¿Celoso de mi narración?
+:rubber:default:¡Veamos qué puedes hacer, enclenque…!
+
+
+

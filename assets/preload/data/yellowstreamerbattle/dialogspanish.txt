@@ -1,0 +1,34 @@
+:music:2-2:
+:music:fadeIn:
+:bg:yellow1:
+:gondol:default:¡Muy bien, han llegado a su destino!
+:bf:default:Beep Bo!
+:gondol:default:¡Hasta la próxima! No os metáis en más líos por hoy.
+:fade:yellow1:
+:bg:yellow2:
+:music:3-1:
+:music:fadeIn:
+:narrator:default:Al acercarse a la entrada de la Mina que lleva al desierto...
+:narrator:default:...Un sentimiento de pérdida de pronto golpea a boyfriend por la espalda, el cual se gira para observar lo que parecen…
+:narrator:default:...Los restos de una explosión.
+:music:3-2:
+:music:fadeIn:
+:fade:yellow2:
+:bg:yellow3:
+:narrator:default:Tras hacerse con un Botamóvil, rápidamente se dirigieron hacia el final de la serpentina amarilla.
+:narrator:default:Parecía que su extremo se encontraba dentro de una especie de Templo antiguo.
+:fade:yellow3:
+:bg:yellow4:
+:narrator:default:Sin embargo, antes de llegar allí, otro ser de origami se encontraba en el camino, lo que no suele ser una buena señal.
+:olivia:default:¿Hm?
+:fade:yellow4:
+:bg:yellow5:
+:olivia:default:Oh, hola pequeño, ¿Qué te trae por aquí? 
+:bf:default:Beep...
+:olivia:default:No no, yo no soy uno de esos seres doblados de mi hermano. Llevo bastante tiempo acompañando a Mario para pararles los pies de hecho.
+:bf:default:¿¡Bap Breep?! 
+:olivia:default:Si, eso he dicho, Mario. Está ocupado con esos cararrugadas de mi hermano, así que estoy esperando a que él y el profesor vuelvan.
+:olivia:default:¿Hm, y eso en tu mano? ¡Oh! ¿También te gusta cantar? 
+:bf:default:Beep Boo.
+:olivia:default:Pues es el momento perfecto, aún nos queda un rato hasta que vuelvan, ¿Quieres hacer una ronda rápida?
+:bf:default:Bop!

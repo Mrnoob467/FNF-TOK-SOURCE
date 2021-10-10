@@ -1,0 +1,83 @@
+:music:3-2:
+:music:fadeIn:
+:bg:thrillsatnight1:
+:narrator:default:Boyfriend explica sua situação para Olivia.
+:olivia:default:Ah? Você acha que o Mario pode consertar sua namorada? Espera aí, deixa eu ver algo...
+:fade:thrillsatnight1:
+:bg:thrillsatnight2:
+:sound:sandrun:
+:olivia:default:Sim, como eu esperava, ela foi grampeada. Significa que ela está presa assim... talvez para sempre.
+:bf:default:B-B-B-Beeeep!?
+:bg:thrillsatnight3:
+:sound:fallover:
+:bg:tear:
+:narrator:default:A notícia devastou o Boyfriend. Ele caiu de joelhos e chorou.
+:olivia:default:Ah!, u-uh... Ei, não chore!
+:music:3-3:
+:music:fadeIn:
+:bg:thrillsatnight4:
+:bg:flash:
+:sound:hug:
+:olivia:default:Tá tudo bem, ainda tem uma chance de a gente consertar ela!
+:olivia:default:Uhm... você pode se juntar com a gente em nossa missão para derrotar meu irmão! Ele que é responsável por tudo isso.
+:bf:default:Beep?
+:olivia:default:Mas é claro! Eu tenho certeza que o Mario não iria ter problema com vocês vindo juntos, certo?
+:prof:default:Bem, eu não vejo porquê não. Qualquer ajuda extra é apreciada.
+:olivia:default:Ótimo!
+:prof:default:De qualquer jeito, a gente precisa chegar naquele templo. Vamos lá! Eu tô morrendo de curiosidade pra ver oque está dentro!
+:fade:thrillsatnight4:
+:bg:thrillsatnight5:
+:prof:default:Em frente!
+:olivia:default:Vamos pegar aquela fita!
+:bf:default:Beep!
+:music:3-4:
+:music:fadeIn:
+:fade:thrillsatnight5:
+:bg:thrillsatnight6:
+:sound:sandrun:
+:prof:default:Minha nossa, isso é fascinante... só olha como isso é construído, deve ter sido feito á milhares de anos atrás...
+:prof:default:E esses murais devem ser dos ancestrais, onde está meu diário? Eu preciso anotar tudo isso.
+:olivia:default:Voltando no assunto, eu me pergunto onde o meu irmão está guardando a Fita amarela.
+:prof:default:Ah é... Eu acho que salvar o mundo talvez seja mais importante.
+:fade:thrillsatnight6:
+:bg:thrillsatnight7:
+:music:3-5:
+:music:fadeIn:
+:narrator:default:O grupo eventualmente chega em oque parece ser um grande salão de festa.
+:prof:default:Os ancestrais gostavam de festejar?
+:narrator:default:Antes que sua pergunta pudesse ser respondida, uma voz barulhenta emergiu das grandes portas atrás deles.
+:bg:tear:
+:bg:flash:
+:sound:screenshake:
+:devil:blackened:Não não não! Você acha que isso aí é bom?! Eu achei que o Rei me daria soldados com gosto decente em música!
+:olivia:default:Eu não sei se os ancestrais curtiam festejar, mas eu tenho certeza que esse cara aí curte..
+:olivia:default:Espera, se é um amigo do meu irmão, significa que a fita deve estar lá dentro com eles!
+:bg:tear:
+:bg:flash:
+:sound:screenshake:
+:devil:blackened:Eu quero curtir, mas eu não tô saindo daqui até que aquela pista de dança esteja cheia!
+:bg:tear:
+:bg:flash:
+:sound:screenshake:
+:devil:blackened:Então algum de vocês, mude o lixo dessa música nesse instante!!
+:fade:thrillsatnight7:
+:bg:thrillsatnight8:
+:narrator:default:O grupo se divide. Enquanto Boyfriend ajuda em escolher uma nova música, Mario vai procurar pessoas para encher a sala.
+:bf:default:Beep Boop bada boo.
+:dj:default:Me desculpa mano... E-Eu não entendo...
+:narrator:default:Mario e Professor Toad acham um bando de toads estranhos que começama a reagir com a música distante.
+:prof:default:Você tem certeza sobre isso, Mario...?
+:bg:thrillsatnight9:
+:sound:fallover:
+:bg:tear:
+:music:3-6:
+:music:fadeIn:
+:narrator:default:Quando Mario chegou com a multidão de toads, eles foram ao Boyfriend e jogaram ele para o ar.
+:bg:tear:
+:bg:flash:
+:bf:default:Beeep!!!
+:olivia:default:Eek!! O que eles estão fazendo?
+:dj:default:Eu acho que aquele ali tá desafiando ele a... cantar?
+:olivia:default:Por que eles iriam querer ele fazer isso?
+:prof:default:Não faço ideia, mas a gente precisa manter eles aqui tempo o bastante pra fazer a pessoa que estiver guardando a Fita aparecer...
+:olivia:default:Tá, só toma cuidado...

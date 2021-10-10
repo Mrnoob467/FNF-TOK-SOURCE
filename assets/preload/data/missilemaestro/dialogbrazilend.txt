@@ -10,4 +10,3 @@
 :bg:missile5:
 :narrator:default:Ainda em choque, Boyfriend sobe no teleférico com a Girlfriend, e prosseguem sua jornada a Montanha do Outono.
 :narrator:default:Pelo bem deles, vamos torcer que Mario não esteja muito longe...
-:sound:tbc:
