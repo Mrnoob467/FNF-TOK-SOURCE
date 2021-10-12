@@ -9,7 +9,7 @@ Prepare for an epic advneture! **Friday Night Funkin: The Origami King** is a mo
 
 **THIS IS CURRENTLY A 3 CHAPTER DEMO.**
 
-Links: **[GameJolt Demo II Page](https://gamejolt.com/games/fnforigamiking/643605)**, **[GameBanana F3 Demo page](https://gamebanana.com/gamefiles/16761)**
+Links: **[GameJolt Demo II Page](https://gamejolt.com/games/fnforigamiking/643605)**, **[GameBanana F3 Demo page](https://gamebanana.com/mods/317459)**
 
 ### The Team:
 - [NinKey](https://twitter.com/NinKey69) - Director/Artist
