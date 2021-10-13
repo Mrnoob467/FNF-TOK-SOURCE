@@ -54,9 +54,6 @@
 		<library name="chapter1"    preload="true" />
 		<library name="chapter2"    preload="true" />
 		<library name="chapter3"    preload="true" />
-		<library name="chapter4"    preload="true" />
-		<library name="chapter5"    preload="true" />
-		<library name="chapter6"    preload="true" />
 		<library name="dialogue"    preload="true" />
 		<library name="other"    preload="true" />
 	</section>
@@ -68,9 +65,6 @@
 		<library name="chapter1"    preload="false" />
 		<library name="chapter2"    preload="false" />
 		<library name="chapter3"    preload="false" />
-		<library name="chapter4"    preload="false" />
-		<library name="chapter5"    preload="false" />
-		<library name="chapter6"    preload="false" />
 		<library name="dialogue"    preload="false" />
 		<library name="other"    preload="false" />
 	</section>
@@ -87,12 +81,6 @@
 	<assets path="assets/chapter2"    library="chapter2"    exclude="*.mp3" unless="web"/>
 	<assets path="assets/chapter3"    library="chapter3"    exclude="*.ogg" if="web"/>
 	<assets path="assets/chapter3"    library="chapter3"    exclude="*.mp3" unless="web"/>
-	<assets path="assets/chapter4"    library="chapter4"    exclude="*.ogg" if="web"/>
-	<assets path="assets/chapter4"    library="chapter4"    exclude="*.mp3" unless="web"/>
-	<assets path="assets/chapter5"    library="chapter5"    exclude="*.ogg" if="web"/>
-	<assets path="assets/chapter5"    library="chapter5"    exclude="*.mp3" unless="web"/>
-	<assets path="assets/chapter6"    library="chapter6"    exclude="*.ogg" if="web"/>
-	<assets path="assets/chapter6"    library="chapter6"    exclude="*.mp3" unless="web"/>
 	<assets path="assets/dialogue"    library="dialogue"    exclude="*.ogg" if="web"/>
 	<assets path="assets/dialogue"    library="dialogue"    exclude="*.mp3" unless="web"/>
 	<assets path="assets/other"    library="other"    exclude="*.ogg" if="web"/>
