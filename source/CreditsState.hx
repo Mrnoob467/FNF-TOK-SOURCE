@@ -121,7 +121,7 @@ class CreditsState extends MusicBeatState
 			changeItem();
 		}
 
-		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, gameVer +  (Main.watermarks ?  gameVer + "GameBanana Demo 2" : ""), 12);
+		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, (Main.watermarks ?  gameVer + "GameBanana Demo 2" : ""), 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);

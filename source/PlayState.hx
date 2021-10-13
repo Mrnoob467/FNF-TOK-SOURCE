@@ -1,5 +1,6 @@
 package;
 
+import flash.system.System;
 import flixel.input.keyboard.FlxKey;
 import haxe.Exception;
 import openfl.geom.Matrix;
@@ -379,6 +380,9 @@ class PlayState extends MusicBeatState
 		trace('INFORMATION ABOUT WHAT U PLAYIN WIT:\nFRAMES: ' + Conductor.safeFrames + '\nZONE: ' + Conductor.safeZoneOffset + '\nTS: ' + Conductor.timeScale + '\nBotPlay : ' + FlxG.save.data.botplay);
 	
 		//dialogue shit
+
+		if (SONG.song.toLowerCase() == 'thealmightyyape' && FlxG.save.data.yape == false)
+		System.exit(0);
 
 		switch (songLowercase)
 		{

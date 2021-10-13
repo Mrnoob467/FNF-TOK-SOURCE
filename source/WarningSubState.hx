@@ -18,6 +18,7 @@ class WarningSubState extends MusicBeatState
 	override function create()
 	{
 		super.create();
+		
 		var bg:FlxSprite = new FlxSprite(0, -700).loadGraphic(Paths.image('conceptsketch3', 'preload'));
 		bg.setGraphicSize(Std.int(bg.width * 0.15));
 		bg.screenCenter(X);

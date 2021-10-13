@@ -35,8 +35,8 @@ class CreditsRoll extends MusicBeatState
 		add(OrigamiLogo);
 
 		credtxt = new FlxText(0, 800, FlxG.width,
-			"DEV TEAM\n\nNinKey - Artist/Animator/Director\nArtPanz - Cutscene Artist/Trailer Maker\n200thSnak - Storywriter/Musician/Charter\nLemonKing - Programmer\n\n\nSUPPORT TEAM\n\nDoodlz - Additional Artist\nDiscWraith - Additional Charting Help\nFruitsy - Modcharts\nXyle - Trailer Music\nSoulegal - Portuguese Translator\nAizakku - Portuguese Translator\n\n\nBETA TESTERS\n\nClowfoe\nDiscWraith\nMattheenstra\nDubSkuad\n\n\n'Paper Mario The Origami King' by Nintendo\n\n\n'Friday Night Funkin' by Ninjamuffin99 & crew\n\n\nKade Engine by KadeDeveloper\n\n\nSPECIAL THANKS\n\nSound Effects - Freesounds.org & TobyFox\nHostKal - Additional Art\nJuno Songs - Yape\nMan on the Internet - Yape\n\n\nAnd you :)",
-			64);
+			"DEV TEAM\n\nNinKey - Artist/Animator/Director\nArtPanz - Cutscene Artist/Trailer Maker\n200thSnak - Storywriter/Musician/Charter\nLemonKing - Programmer\n\n\nSUPPORT TEAM\n\nDoodlz - Additional Artist\nDiscWraith - Additional Charting Help\nFruitsy - Modcharts\nXyle - Trailer Music\nSoulegal - Portuguese Translator\nAizakku - Portuguese Translator\n\n\nBETA TESTERS\n\nClowfoe\nDiscWraith\nMattheenstra\nDubSkuad\n\n\n'Paper Mario The Origami King' by Nintendo\n\n\n'Friday Night Funkin' by Ninjamuffin99 & crew\n\n\nKade Engine by KadeDeveloper\n\n\nSPECIAL THANKS\n\nSound Effects - Freesounds.org & TobyFox\nTentaRJ - GameJolt Achivement Support\nHostKal - Additional Art\nJuno Songs - Yape\nMan on the Internet - Yape\n\n\nAnd you :)",
+			64);	
 		credtxt.setFormat(Paths.font("mario.ttf"), 50, CENTER);
 		credtxt.borderColor = FlxColor.BLACK;
 		credtxt.borderSize = 3;
